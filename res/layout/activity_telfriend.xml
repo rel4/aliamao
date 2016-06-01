@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title" />
+
+        <RelativeLayout
+            android:id="@+id/rl_anf_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y20"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <EditText
+                android:id="@+id/et_atf_search"
+                style="@style/eidtText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/tv_atf_search"
+                android:background="@drawable/bg_et_ht_search"
+                android:drawableLeft="@drawable/fdj"
+                android:paddingLeft="@dimen/x20"
+                android:textSize="@dimen/x32" />
+
+            <TextView
+                android:id="@+id/tv_atf_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/x20"
+                android:text="搜索"
+                android:textColor="@color/word_black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_at_forshow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/et_atf_search"
+                android:layout_alignBottom="@+id/et_atf_search"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/x60"
+                android:text="搜索"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x28" />
+        </RelativeLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/ptr_tpl_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_blackgrey" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </LinearLayout>
+
+</RelativeLayout>

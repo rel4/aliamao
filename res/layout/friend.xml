@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x68"
+        android:layout_marginTop="@dimen/x20" >
+
+        <EditText
+            android:id="@+id/et_friend_select"
+            style="@style/eidtText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toLeftOf="@+id/iv_friend_searchicon"
+            android:background="@drawable/search_box" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/iv_friend_searchicon"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/y42"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:src="@drawable/search_icon" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_friend_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y20" >
+    </ListView>
+
+</LinearLayout>

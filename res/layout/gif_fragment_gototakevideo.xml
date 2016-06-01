@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="#000" />
+
+    <RelativeLayout
+        android:id="@+id/iv_end_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/y10" >
+
+        <ImageView
+            android:layout_width="@dimen/x122"
+            android:layout_height="@dimen/y122"
+            android:src="@drawable/gif_gototakevideo" />
+    </RelativeLayout>
+
+    <com.ant.liao.GifView
+        android:id="@+id/gifView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x50"
+        android:layout_marginTop="@dimen/y35"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_hand_left"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/y120"
+        android:layout_below="@+id/iv_end_left"
+        android:layout_marginRight="@dimen/y100"
+        android:layout_marginTop="@dimen/y100"
+        android:layout_toLeftOf="@+id/iv_end_left"
+        android:src="@drawable/icon_newhand_hand" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y500"
+        android:gravity="center"
+        android:text="点击发布可进入视频页面"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/x36" />
+
+</RelativeLayout>

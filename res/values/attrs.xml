@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="swipelistviewstyle">
+        <attr name="right_width" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="onDrawable" format="reference" />
+        <attr name="offDrawable" format="reference" />
+        <attr name="thumbDrawable" format="reference" />
+        <attr name="thumb_margin" format="dimension|reference" />
+        <attr name="thumb_marginTop" format="dimension|reference" />
+        <attr name="thumb_marginBottom" format="dimension|reference" />
+        <attr name="thumb_marginLeft" format="dimension|reference" />
+        <attr name="thumb_marginRight" format="dimension|reference" />
+        <attr name="thumb_width" format="dimension|reference" />
+        <attr name="thumb_height" format="dimension|reference" />
+        <attr name="onColor" format="color|reference" />
+        <attr name="offColor" format="color|reference" />
+        <attr name="thumbColor" format="color|reference" />
+        <attr name="thumbPressedColor" format="color|reference" />
+        <attr name="animationVelocity" format="integer" />
+        <!-- <attr name="radius" format="integer" /> -->
+        <attr name="measureFactor" format="float" />
+        <attr name="insetLeft" format="dimension|reference" />
+        <attr name="insetRight" format="dimension|reference" />
+        <attr name="insetTop" format="dimension|reference" />
+        <attr name="insetBottom" format="dimension|reference" />
+        <!-- 画笔的style -->
+        <attr name="paint_style" format="integer" />
+    </declare-styleable>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <attr name="src" format="reference"></attr>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+    <declare-styleable name="WheelView">
+        <attr name="visibleItems" format="integer" />
+        <attr name="itemHeight" format="integer" />
+        <attr name="lineHeight" format="integer" />
+        <attr name="ctextsize" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="mySwitch">
+        <attr name="msType" format="string"></attr>
+    </declare-styleable>
+    <declare-styleable name="CustomShapeImageView">
+        <attr name="shape" format="integer">
+            <enum name="circle" value="1" />
+            <enum name="rectangle" value="2" />
+            <enum name="svg" value="3" />
+        </attr>
+        <attr name="svg_raw_resource" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="MovieRecorderView">
+
+        <!-- 开始是否打开摄像头 -->
+        <attr name="mrv_is_open_camera" format="boolean" />
+        <!-- 一次拍摄最长时间 -->
+        <attr name="mrv_record_max_time" format="integer" />
+        <!-- 视频分辨率宽度 -->
+        <attr name="mrv_width" format="integer" />
+        <!-- 视频分辨率高度 -->
+        <attr name="mrv_height" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="LinkBuilder">
+        <attr name="defaultLinkColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="gifView">
+
+        <!-- 图片来源 -->
+        <attr name="gifView_src" format="integer" />
+        <!-- 播放延迟 -->
+        <attr name="gifView_delay" format="integer" />
+        <!-- 设置是否停止 -->
+        <attr name="gifView_stop" format="boolean" />
+    </declare-styleable>
+
+    <attr name="linkBuilderStyle" format="reference" />
+
+</resources>

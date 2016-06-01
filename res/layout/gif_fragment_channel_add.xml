@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="#000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.ant.liao.GifView
+            android:id="@+id/gifView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_hand_left"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y120"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_newhand_hand" />
+
+        <RelativeLayout
+            android:id="@+id/iv_end_left"
+            android:layout_width="@dimen/x30"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_hand_left"
+            android:layout_alignTop="@+id/iv_hand_left"
+            android:layout_toRightOf="@+id/iv_hand_left" >
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_hand_left"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y100"
+            android:text="点击添加兴趣标签"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/x36" />
+    </RelativeLayout>
+
+</RelativeLayout>

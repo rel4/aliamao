@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myswitch="http://com/limaoso/InstantMessage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite" >
+
+    <include
+        android:id="@+id/create_new_ht"
+      
+        layout="@layout/title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/create_new_ht" >
+
+        <RelativeLayout
+            android:id="@+id/rl_create_new_ht"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_greywhite"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/ll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/creat_new_ht_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y98"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:hint="  群组名称  如：花千骨讨论话题"
+                    android:paddingLeft="@dimen/x20"
+                    android:paddingRight="@dimen/x20"
+                    android:singleLine="true"
+                    android:textColor="@color/word_black"
+                    android:textColorHint="@color/word_greyblack"
+                    android:textCursorDrawable="@drawable/cursor_shape"
+                    android:textSize="@dimen/x32" />
+
+                <View style="@style/horizontal_line_style" />
+
+                <EditText
+                    android:id="@+id/creat_new_ht_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y230"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="top|left"
+                    android:hint="  介绍下你的话题，让更多的加入。"
+                    android:maxLines="5"
+                    android:paddingBottom="@dimen/y15"
+                    android:paddingLeft="@dimen/x20"
+                    android:paddingRight="@dimen/x20"
+                    android:paddingTop="@dimen/y20"
+                    android:textColor="@color/word_black"
+                    android:textColorHint="@color/word_greyblack"
+                    android:textCursorDrawable="@drawable/cursor_shape"
+                    android:textSize="@dimen/x32" />
+
+                <View style="@style/horizontal_line_style" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y98"
+                    android:background="@color/bg_white"
+                    android:paddingRight="@dimen/x30" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:gravity="center"
+                        android:text="是否审核话题成员"
+                        android:textColor="@color/word_black"
+                        android:textSize="@dimen/x36" />
+
+                    <com.aliamauri.meat.view.MySwitch
+                        android:id="@+id/ms_sm_getmessage"
+                        android:layout_width="@dimen/x138"
+                        android:layout_height="@dimen/y46"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ll_layout"
+                android:layout_marginTop="@dimen/y20"
+                android:background="@color/bg_white" >
+
+                <TextView
+                    android:id="@+id/tv_title_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y68"
+                    android:gravity="left|center"
+                    android:paddingLeft="@dimen/x30"
+                    android:text="邀请好友"
+                    android:textColor="@color/word_greyblack"
+                    android:textSize="@dimen/x28" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tv_title_list" >
+
+                    <ListView
+                        android:id="@+id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:cacheColorHint="#00000000"
+                        android:descendantFocusability="afterDescendants"
+                        android:divider="@color/bg_greywhite"
+                        android:dividerHeight="@dimen/y1"
+                        android:fastScrollEnabled="true" />
+
+                    <comcom.aliamauri.meat.weight.Sidebar                       android:id="@+id/sidebar"
+                        android:layout_width="@dimen/x25"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@android:color/transparent"
+                        android:clickable="true" />
+
+                    <TextView
+                        android:id="@+id/floating_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/x50"
+                        android:paddingRight="@dimen/x50"
+                        android:textColor="@color/word_black"
+                        android:textSize="@dimen/x80"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_create_new_ht"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_greywhite"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_create_ht_ok_headicon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/y70"
+                    android:layout_marginTop="@dimen/y70" >
+
+                    <com.aliamauri.meat.view.CircleImageView
+                        android:id="@+id/ci_create_ht_ok_headicon"
+                        android:layout_width="@dimen/x140"
+                        android:layout_height="@dimen/y140"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:src="@drawable/head_default_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_create_ht_ok_headicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ci_create_ht_ok_headicon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/y30"
+                        android:gravity="center"
+                        android:text="选择头像"
+                        android:textColor="@color/word_greyblack"
+                        android:textSize="@dimen/x36"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <View style="@style/horizontal_line_style" />
+
+                <FrameLayout
+                    android:id="@+id/id_framelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_white"
+                    android:paddingBottom="@dimen/y20"
+                    android:paddingLeft="@dimen/x30"
+                    android:paddingRight="@dimen/x30"
+                    android:paddingTop="@dimen/y20" >
+
+                    <TextView
+                        android:id="@+id/tv_created_ht_hite_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/tag_hite_text"
+                        android:textColor="@color/word_greyblack"
+                        android:textSize="@dimen/x32" />
+
+                    <com.aliamauri.meat.view.FlowLayout
+                        android:id="@+id/fl_created_ht_show_tag"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bg_white"
+                        android:visibility="gone" >
+                    </com.aliamauri.meat.view.FlowLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_created_ht_add_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:src="@drawable/tag_add_icon" />
+                </FrameLayout>
+
+                <View style="@style/horizontal_line_style" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_white"
+                    android:paddingBottom="@dimen/y20"
+                    android:paddingLeft="@dimen/x30"
+                    android:paddingRight="@dimen/x30"
+                    android:paddingTop="@dimen/y20" >
+
+                    <TextView
+                        android:id="@+id/tag_created_ht_title_text_qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="@string/tag_title_text"
+                        android:textColor="@color/word_greyblack"
+                        android:textSize="@dimen/x32" />
+
+                    <TextView
+                        android:id="@+id/tv_created_ht_title_button_swap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@id/tag_created_ht_title_text_qq"
+                        android:paddingLeft="@dimen/x15"
+                        android:paddingRight="@dimen/x15"
+                        android:text="@string/tv_btn_tag"
+                        android:textColor="@color/main_color"
+                        android:textSize="@dimen/x32" />
+
+                    <com.aliamauri.meat.view.FlowLayout
+                        android:id="@+id/fl_created_ht_show_net_tag"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tag_created_ht_title_text_qq"
+                        android:layout_marginBottom="@dimen/y20"
+                        android:layout_marginTop="@dimen/y20"
+                        android:background="@color/bg_white" >
+                    </com.aliamauri.meat.view.FlowLayout>
+                </RelativeLayout>
+
+                <View style="@style/horizontal_line_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_created_ht_edit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y98"
+                android:layout_gravity="bottom"
+                android:background="@color/bg_white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <View style="@style/horizontal_line_style" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/tv_created_ht_fasong"
+                        style="@style/retrans_import_text_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:layout_marginRight="@dimen/x30"
+                        android:text="@string/text_dialog_btn_ok" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_created_ht_import_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:layout_toLeftOf="@id/tv_created_ht_fasong"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/edit_text_checked"
+                        android:hint="输入标签名称"
+                        android:singleLine="true"
+                        android:textColor="@color/word_black"
+                        android:textColorHint="@color/word_greyblack"
+                        android:textSize="@dimen/x32" >
+                    </EditText>
+                </RelativeLayout>
+
+                <View style="@style/horizontal_line_style" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>

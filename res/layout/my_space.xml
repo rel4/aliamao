@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_greywhite"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_myspace_data"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y178"
+            android:background="@color/bg_white"
+            android:paddingBottom="@dimen/x20"
+            android:paddingTop="@dimen/x20" >
+
+            <com.aliamauri.meat.view.CircleImageView
+                android:id="@+id/ci_myspace_icon"
+                android:layout_width="@dimen/x110"
+                android:layout_height="@dimen/y110"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x20" />
+
+            <TextView
+                android:id="@+id/tv_myspace_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ci_myspace_icon"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x36" />
+
+            <TextView
+                android:id="@+id/tv_myspace_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_myspace_nickname"
+                android:layout_toRightOf="@id/ci_myspace_icon"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x30" />
+
+            <TextView
+                android:id="@+id/tv_myspace_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_myspace_account"
+                android:layout_toRightOf="@id/ci_myspace_icon"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x30" />
+
+            <TextView
+                android:id="@+id/tv_myspace_data"
+                android:layout_width="@dimen/x130"
+                android:layout_height="@dimen/y55"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/myspace_edit" />
+        </RelativeLayout>
+
+        <View
+            style="@style/horizontal_line_style"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y110"
+            android:background="@color/bg_white"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2" >
+
+            <RelativeLayout
+                android:id="@+id/rl_myspace_friend"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_myspace_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/y20"
+                    android:drawableLeft="@drawable/icon_myspace_friend"
+                    android:drawablePadding="@dimen/x40"
+                    android:textColor="@color/word_black"
+                    android:textSize="@dimen/x32" />
+
+                <View
+                    android:id="@+id/v_selecuser_vertical"
+                    style="@style/vertical_line_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/y30"
+                    android:layout_marginTop="@dimen/y30" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_myspace_talk"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_myspace_talk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/y20"
+                    android:drawableLeft="@drawable/icon_myspace_talk"
+                    android:drawablePadding="@dimen/x40"
+                    android:textColor="@color/word_black"
+                    android:textSize="@dimen/x32" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/horizontal_line_style" />
+
+        <View
+            style="@style/horizontal_line_style"
+            android:layout_marginTop="@dimen/y20" />
+
+        <RelativeLayout
+            android:id="@+id/rl_myspace_album"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y140"
+            android:background="@color/bg_white" >
+
+            <TextView
+                android:id="@+id/tv_myspace_xc"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y100"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:gravity="center"
+                android:text="相册"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+
+            <com.aliamauri.meat.view.HorizontalListView
+                android:id="@+id/hlv_myspace_photos"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y80"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_myspace_jiantou1"
+                android:layout_toRightOf="@+id/tv_myspace_xc" />
+
+            <ImageView
+                android:id="@+id/iv_myspace_jiantou1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/wd_jr" />
+
+            <ImageView
+                android:id="@+id/iv_myspace_album"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_style" />
+
+        <View
+            style="@style/horizontal_partition_line_style"
+            android:layout_marginTop="@dimen/dp15" />
+
+        <RelativeLayout
+            android:id="@+id/rl_myspace_myattention"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@color/bg_white"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20" >
+
+            <ImageView
+                android:id="@+id/iv_ms_img11"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/y49"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_myspace_myattention" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_toRightOf="@+id/iv_ms_img11"
+                android:gravity="center"
+                android:text="我关注的"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+
+            <TextView
+                android:id="@+id/tv_myspace_numbermyattention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_toLeftOf="@+id/iv_myspace_right_myattention"
+                android:gravity="center"
+                android:text="107人"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x32" />
+
+            <ImageView
+                android:id="@+id/iv_myspace_right_myattention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/wd_jr" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_style" />
+
+        <RelativeLayout
+            android:id="@+id/rl_myspace_attentionmine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@color/bg_white"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20" >
+
+            <ImageView
+                android:id="@+id/iv_ms_img12"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/y49"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_myspace_attentionmine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_toRightOf="@+id/iv_ms_img12"
+                android:gravity="center"
+                android:text="关注我的"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+
+            <TextView
+                android:id="@+id/tv_myspace_numberattentionmine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_toLeftOf="@+id/iv_myspace_right_attentionmine"
+                android:gravity="center"
+                android:text="107人"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x32" />
+
+            <ImageView
+                android:id="@+id/iv_myspace_right_attentionmine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/wd_jr" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_style" />
+
+        <View
+            style="@style/horizontal_partition_line_style"
+            android:layout_marginTop="@dimen/dp15" />
+
+        <RelativeLayout
+            android:id="@+id/rl_myspace_mydyvideo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@color/bg_white"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20" >
+
+            <ImageView
+                android:id="@+id/iv_ms_img10"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/y49"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_myspace_myvideo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_toRightOf="@+id/iv_ms_img10"
+                android:gravity="center"
+                android:text="我的作品"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/wd_jr" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_style" />
+
+        <View
+            style="@style/horizontal_partition_line_style"
+            android:layout_marginTop="@dimen/dp15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_myspace_mydynamic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:background="@color/bg_white"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20" >
+
+                <ImageView
+                    android:id="@+id/iv_ms_img4"
+                    android:layout_width="@dimen/x50"
+                    android:layout_height="@dimen/y49"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/myspace_dynamic_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_toRightOf="@+id/iv_ms_img4"
+                    android:gravity="center"
+                    android:text="我的动态"
+                    android:textColor="@color/word_black"
+                    android:textSize="@dimen/x32" />
+
+                <ImageView
+                    android:id="@+id/iv_myspace_jiantou2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/wd_jr" />
+            </RelativeLayout>
+
+            <View
+                style="@style/horizontal_line_style"
+                android:layout_marginLeft="@dimen/x105"
+                android:layout_marginRight="@dimen/x20"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_myspace_authenticate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:background="@color/bg_white"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_ms_img5"
+                    android:layout_width="@dimen/x50"
+                    android:layout_height="@dimen/y49"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/myspace_authenticate_icon" />
+
+                <TextView
+                    android:id="@+id/tv_myspace_authenticate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/y100"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_toRightOf="@+id/iv_ms_img5"
+                    android:gravity="center"
+                    android:text="实名认证"
+                    android:textColor="@color/word_black"
+                    android:textSize="@dimen/x32" />
+
+                <ImageView
+                    android:id="@+id/iv_myspace_jiantou3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/wd_jr" />
+            </RelativeLayout>
+
+            <View
+                style="@style/horizontal_line_style"
+                android:layout_marginLeft="@dimen/x105"
+                android:layout_marginRight="@dimen/x20"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_myspace_vipcenter"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:background="@color/bg_white"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_ms_img6"
+                    android:layout_width="@dimen/x50"
+                    android:layout_height="@dimen/y49"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/myspace_vip_icon" />
+
+                <TextView
+                    android:id="@+id/tv_myspace_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/y100"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_toRightOf="@+id/iv_ms_img6"
+                    android:gravity="center"
+                    android:text="会员中心"
+                    android:textColor="@color/word_black"
+                    android:textSize="@dimen/x32" />
+
+                <ImageView
+                    android:id="@+id/iv_myspace_jiantou4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/wd_jr" />
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line_style" />
+        </LinearLayout>
+
+        <View
+            style="@style/horizontal_partition_line_style"
+            android:layout_marginTop="@dimen/dp15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_my_space_record"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:clickable="true"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20" >
+
+                <ImageView
+                    android:id="@+id/iv_ms_img1"
+                    android:layout_width="@dimen/x50"
+                    android:layout_height="@dimen/y49"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_myspace_record" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_toRightOf="@+id/iv_ms_img1"
+                    android:drawablePadding="@dimen/x30"
+                    android:gravity="center"
+                    android:text="记录"
+                    android:textColor="@color/word_black"
+                    android:textSize="@dimen/x32" />
+
+                <ImageView style="@style/my_space_go_style" />
+            </RelativeLayout>
+
+            <View
+                style="@style/horizontal_line_style"
+                android:layout_marginLeft="@dimen/x105"
+                android:layout_marginRight="@dimen/x20"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_my_space_cache"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:clickable="true"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20" >
+
+                <ImageView
+                    android:id="@+id/iv_ms_img2"
+                    android:layout_width="@dimen/x50"
+                    android:layout_height="@dimen/y49"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_myspace_chache" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_toRightOf="@+id/iv_ms_img2"
+                    android:drawablePadding="@dimen/x30"
+                    android:gravity="center"
+                    android:text="缓存"
+                    android:textColor="@color/word_black"
+                    android:textSize="@dimen/x32" />
+
+                <ImageView
+                    style="@style/my_space_go_style"
+                    android:layout_marginLeft="@dimen/dp30" />
+            </RelativeLayout>
+
+            <View
+                style="@style/horizontal_line_style"
+                android:layout_marginLeft="@dimen/x105"
+                android:layout_marginRight="@dimen/x20" />
+
+            <RelativeLayout
+                android:id="@+id/rl_my_space_collect"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:clickable="true"
+                android:padding="@dimen/x20"
+                android:paddingRight="@dimen/x20"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_ms_img3"
+                    android:layout_width="@dimen/x50"
+                    android:layout_height="@dimen/y49"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_myspace_collect" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_toRightOf="@+id/iv_ms_img3"
+                    android:gravity="center"
+                    android:text="收藏"
+                    android:textColor="@color/word_black"
+                    android:textSize="@dimen/x32" />
+
+                <ImageView
+                    style="@style/my_space_go_style"
+                    android:layout_marginLeft="@dimen/dp30" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/horizontal_line_style" />
+
+        <View
+            style="@style/horizontal_line_style"
+            android:layout_marginTop="@dimen/y20" />
+
+        <RelativeLayout
+            android:id="@+id/rl_myspace_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@color/bg_white"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20" >
+
+            <ImageView
+                android:id="@+id/iv_ms_img7"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/y49"
+                android:layout_centerVertical="true"
+                android:src="@drawable/myspace_setting_icon" />
+
+            <TextView
+                android:id="@+id/tv_myspace_set"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y100"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_toRightOf="@+id/iv_ms_img7"
+                android:gravity="center"
+                android:text="系统设置"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+
+            <ImageView
+                android:id="@+id/iv_myspace_jiantou6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/wd_jr" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_style" />
+
+        <View
+            style="@style/horizontal_line_style"
+            android:layout_marginTop="@dimen/y20" />
+
+        <RelativeLayout
+            android:id="@+id/rl_myspace_blacelist"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@color/bg_white"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20" >
+
+            <ImageView
+                android:id="@+id/iv_ms_img8"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/y49"
+                android:layout_centerVertical="true"
+                android:src="@drawable/myspace_blacklist_icon" />
+
+            <TextView
+                android:id="@+id/tv_myspace_hmd"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y100"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_toRightOf="@+id/iv_ms_img8"
+                android:gravity="center"
+                android:text="黑名单"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+
+            <TextView
+                android:id="@+id/tv_myspace_blackcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_style" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y150"
+            android:background="@color/bg_greywhite" />
+    </LinearLayout>
+
+</ScrollView>

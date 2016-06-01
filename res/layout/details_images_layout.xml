@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ViewFlipper
+        android:id="@+id/vf_show_all_images"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg_black" >
+    </ViewFlipper>
+
+    <TextView
+        android:id="@+id/tv_show_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/y50"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/x28" />
+
+    <FrameLayout
+        android:id="@+id/fl_progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            android:id="@+id/pb_home_content_all_progress"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:indeterminateDrawable="@drawable/custom_progress"
+            android:indeterminateDuration="700" />
+
+        <TextView
+            android:id="@+id/tv_progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/bg_white"
+             android:visibility="gone"
+            android:textSize="@dimen/x28" />
+    </FrameLayout>
+
+</FrameLayout>

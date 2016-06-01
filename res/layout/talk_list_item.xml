@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y170"
+        android:layout_marginLeft="@dimen/x20" >
+
+        <com.aliamauri.meat.view.CircleImageView
+            android:id="@+id/ci_selectcondition_icon"
+            android:layout_width="@dimen/x140"
+            android:layout_height="@dimen/y140"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_toRightOf="@+id/ci_selectcondition_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+
+                android:id="@+id/tv_talklistitem_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/x43"
+                    android:layout_height="@dimen/y30"
+                    android:src="@drawable/talk_groupnumber_icon" />
+
+                <TextView
+                    android:id="@+id/tv_talklistitem_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/word_greyblack"
+                    android:textSize="@dimen/x24" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_talklistitem_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x26" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+</LinearLayout>

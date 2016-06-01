@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/y98"
+        android:layout_marginTop="@dimen/y30"
+        android:background="@color/bg_white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center_vertical"
+            android:text="年龄"
+            android:textColor="@color/word_black" />
+
+        <TextView
+            android:id="@+id/tv_date_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y100"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:gravity="center_vertical"
+            android:textColor="@color/word_black" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/y100"
+        android:background="@color/bg_white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center_vertical"
+            android:text="星座"
+            android:textColor="@color/word_black" />
+
+        <TextView
+            android:id="@+id/tv_birthday_constellation"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y100"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:gravity="center_vertical"
+            android:textColor="@color/word_black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <View style="@style/horizontal_line_style" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/ll_date_scroll"
+            android:layout_marginTop="10dp"
+            android:background="@color/word_black" />
+
+        <LinearLayout
+            android:id="@+id/ll_date_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <com.aliamauri.meat.weight.wheelview.WheelView
+                    android:id="@+id/year"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/y20"
+                    android:layout_marginTop="@dimen/y20"
+                    android:layout_weight="1" />
+
+                <com.aliamauri.meat.weight.wheelview.WheelView
+                    android:id="@+id/month"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/y20"
+                    android:layout_marginTop="@dimen/y20"
+                    android:layout_weight="1" />
+
+                <com.aliamauri.meat.weight.wheelview.WheelView
+                    android:id="@+id/day"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/y20"
+                    android:layout_marginTop="@dimen/y20"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/word_black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_popup_more"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/btn_popup_delete"
+        style="@style/popup_btn_text_style"
+        android:drawableLeft="@drawable/icon_popup_left_delete"
+        android:visibility="gone"
+        android:text="@string/text_delete" />
+    <TextView
+        android:id="@+id/btn_popup_retrans"
+        style="@style/popup_btn_text_style"
+        android:drawableLeft="@drawable/icon_popup_left_retrans"
+        android:visibility="visible"
+        android:text="@string/text_retrans" />
+    <View
+        style="@style/vertical_line_style"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/btn_popup_dz"
+        style="@style/popup_btn_text_style"
+        android:drawableLeft="@drawable/icon_popup_left_dz"
+        android:text="@string/text_zero" />
+
+    <View
+        style="@style/vertical_line_style"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/btn_popup_message"
+        style="@style/popup_btn_text_style"
+        android:drawableLeft="@drawable/icon_popup_left_message"
+        android:text="@string/text_zero" />
+
+</LinearLayout>

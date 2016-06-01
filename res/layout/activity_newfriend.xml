@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_anf_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:layout_marginBottom="@dimen/y20"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@drawable/bg_et_ht_search" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@drawable/fdj" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="手机号码/UID"
+            android:textColor="@color/word_greyblack"
+            android:textSize="@dimen/x32" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_blackgrey"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_anf_myphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y30"
+            android:layout_marginTop="@dimen/y30"
+            android:gravity="center"
+            android:text="本机号码"
+            android:textColor="@color/word_greyblack"
+            android:textSize="@dimen/x36"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_anf_telsfriend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@color/bg_white"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_anf_iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x20"
+                android:src="@drawable/icon_newfriend_tels" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_anf_iv1"
+                android:background="@color/bg_white"
+                android:gravity="center"
+                android:text="手机号联系人"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

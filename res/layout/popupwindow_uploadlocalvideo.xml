@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/ptr_pop_localvideo_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginRight="@dimen/x50"
+        android:background="@color/bg_white"
+        android:divider="@null"
+        android:minHeight="@dimen/y600"
+        android:numColumns="4"
+        android:scrollbars="none" >
+    </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+
+</LinearLayout>

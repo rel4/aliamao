@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <FrameLayout
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_greywhite" >
+
+        <com.aliamauri.meat.view.RefreshViewUpAndDonw
+            android:id="@+id/lv_zxdt_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#000000"
+            android:dividerHeight="0dp"
+            android:listSelector="#000000"
+            android:scrollbars="vertical" >
+        </com.aliamauri.meat.view.RefreshViewUpAndDonw>
+
+        <FrameLayout
+            android:id="@+id/fl_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/custom_progress"
+                android:indeterminateDuration="700" />
+        </FrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_gray"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_adetail_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/include_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/app_head_title" />
+
+        <com.aliamauri.meat.view.MyScrollView
+            android:id="@+id/sv_adetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include_title"
+            android:scrollbars="@null" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp70"
+                    android:layout_marginBottom="@dimen/dp15"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_marginTop="@dimen/dp15" >
+
+                    <com.aliamauri.meat.view.RoundedImageView
+                        android:id="@+id/riv_adetail_icon"
+                        android:layout_width="@dimen/dp70"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_launch" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@+id/riv_adetail_icon"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_adetail_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="手机淘宝"
+                            android:textColor="@color/word_black"
+                            android:textSize="@dimen/dp15" />
+
+                        <TextView
+                            android:id="@+id/tv_adetail_dlnum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:text="下载次数"
+                            android:textColor="@color/word_greyblack"
+                            android:textSize="@dimen/dp12" />
+
+                        <RatingBar
+                            android:id="@+id/ratingBar"
+                            style="@style/myratingbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp15"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:isIndicator="true"
+                            android:numStars="5" >
+                        </RatingBar>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <com.aliamauri.meat.view.HorizontalListView
+                    android:id="@+id/hlv_adetail_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp270"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_marginRight="@dimen/dp15" >
+                </com.aliamauri.meat.view.HorizontalListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp15"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_border_white_blackline"
+                        android:padding="@dimen/dp5"
+                        android:text="应用介绍"
+                        android:textColor="@color/word_black"
+                        android:textSize="@dimen/dp18" />
+
+                    <TextView
+                        android:id="@+id/tv_adetail_intro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp100"
+                    android:background="@color/bg_white" >
+                </View>
+            </LinearLayout>
+        </com.aliamauri.meat.view.MyScrollView>
+
+        <View
+            style="@style/horizontal_partition_line_style"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/fl_adetail_dl" />
+
+        <FrameLayout
+            android:id="@+id/fl_adetail_dl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_alignParentBottom="true"
+            android:background="#f0f0f0" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15" >
+
+                <ProgressBar
+                    android:id="@+id/proress_adetail_dl"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp39"
+                    android:layout_centerVertical="true"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progressbar_download_app"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_adetail_dl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp39"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/discover_selectstyle"
+                    android:gravity="center"
+                    android:text="下载"
+                    android:textColor="@drawable/color_white_greyblack_selectstyle"
+                    android:textSize="@dimen/dp15" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@color/word_black"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/custom_progress"
+            android:indeterminateDuration="700" />
+    </RelativeLayout>
+
+</RelativeLayout>

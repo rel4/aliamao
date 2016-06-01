@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include_title"
+        android:layout_alignParentTop="true"
+        layout="@layout/title" />
+
+    <LinearLayout
+        android:id="@+id/ll_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_title"
+        android:background="@color/bg_greywhite"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_spyh_impot_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y240"
+            android:background="@color/bg_white"
+            android:gravity="top|left"
+            android:hint="输入约会公告~~（30字以内）"
+            android:paddingBottom="@dimen/y15"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30"
+            android:paddingTop="@dimen/y20"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <View style="@style/horizontal_line_style" />
+
+        <Button
+            android:id="@+id/btn_spyh_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:background="@color/bg_white"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30"
+            android:text="@string/text_spyh_btn_ok"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <View style="@style/horizontal_line_style" />
+
+        <View
+            style="@style/horizontal_line_style"
+            android:layout_marginTop="@dimen/y20" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white"
+            android:paddingBottom="@dimen/y15"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30"
+            android:paddingTop="@dimen/y15"
+            android:text="@string/text_spyh_list_title_name"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <View style="@style/horizontal_line_style" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/ll_top_layout" >
+
+        <com.aliamauri.meat.view.RefreshListView
+            android:id="@+id/lv_show_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white"
+            android:divider="#00000000"
+            android:dividerHeight="0dp" >
+        </com.aliamauri.meat.view.RefreshListView>
+
+        <FrameLayout
+            android:id="@+id/fl_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_greywhite" >
+
+            <ProgressBar
+                android:id="@id/pb_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/custom_progress"
+                android:indeterminateDuration="700" />
+        </FrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>

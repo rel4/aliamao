@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:alpha="0.7"
+            android:background="@color/word_black" />
+
+        <com.aliamauri.meat.view.gif.GIFCircleImageViewWhite
+            android:layout_width="@dimen/x400"
+            android:layout_height="@dimen/y400"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launch" />
+
+        <Button
+            android:id="@+id/tv_guide_click"
+            android:layout_width="@dimen/dp159"
+            android:layout_height="@dimen/dp65"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp20"
+            android:background="@drawable/click_guide"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

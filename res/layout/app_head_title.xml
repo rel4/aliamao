@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_head_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_no_home_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96"
+        android:background="@color/title_color"
+        android:visibility="visible" >
+
+        <!-- 左侧菜单栏按钮 -->
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/y50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@null"
+            android:src="@drawable/sy_zc_gd"
+            android:visibility="gone" />
+        <!-- 左边返回按钮 -->
+
+        <ImageButton
+            android:id="@+id/ibtn_left_home_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="@dimen/x30"
+            android:src="@drawable/bfq_qp_db_fh"
+            android:visibility="visible" />
+
+        <!-- 搜索框布局 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_channel_find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y30"
+            android:layout_toRightOf="@id/btn_menu"
+            android:background="@drawable/sy_srk"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/et_channel_find"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/search_title_hint_content"
+                android:paddingBottom="@dimen/y20"
+                android:paddingLeft="@dimen/x60"
+                android:paddingTop="@dimen/y20"
+                android:textColorHint="@color/word_greyblack"
+                android:textSize="@dimen/x32" />
+
+            <ImageButton
+                android:id="@+id/ibtn_channel_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@null"
+                android:src="@drawable/sy_bd_ss" />
+        </RelativeLayout>
+        <!-- 标题名称 -->
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/text_null"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/x40"
+            android:visibility="visible" />
+        <!-- 右边查找按钮 -->
+
+        <ImageButton
+            android:id="@+id/ibtn_left_home_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:background="@null"
+            android:src="@drawable/fdj_lbj"
+            android:visibility="gone" />
+        <!-- 右边编辑按钮 -->
+
+        <Button
+            android:id="@+id/ibtn_left_home_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x16"
+            android:background="@null"
+            android:text="@string/title_name_edit"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/x40"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/ibtn_left_home_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x16"
+            android:background="@null"
+            android:text="@string/title_name_conserve"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/x40"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:background="@color/bg_title_line" />
+
+</LinearLayout>

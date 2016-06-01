@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30" >
+
+        <com.aliamauri.meat.view.CircleImageView
+            android:id="@+id/ci_selectuseritem_icon"
+            android:layout_width="@dimen/x98"
+            android:layout_height="@dimen/y98"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_toRightOf="@+id/ci_selectuseritem_icon"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_selectuseritem_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x36" />
+
+            <TextView
+                android:id="@+id/tv_selectuseritem_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x26"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/y58"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:background="@drawable/bg_ht_tj"
+            android:gravity="center"
+            android:text="添加"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/x32" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+</LinearLayout>

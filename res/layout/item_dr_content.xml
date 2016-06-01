@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.aliamauri.meat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y400" >
+
+        <com.aliamauri.meat.view.RoundedImageView
+            android:id="@+id/iv_user_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dr_item_bg" >
+
+            <RelativeLayout
+                android:id="@+id/rl_user_base_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginTop="@dimen/y15"
+                android:background="@drawable/bg_user_name_icon" >
+
+                <com.aliamauri.meat.view.CircleImageView
+                    android:id="@+id/civ_user_icon"
+                    android:layout_width="@dimen/x46"
+                    android:layout_height="@dimen/x46"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/y2"
+                    android:layout_marginLeft="@dimen/x2"
+                    android:layout_marginRight="@dimen/x8"
+                    android:layout_marginTop="@dimen/y2"
+                    android:background="@drawable/head_default_icon"
+                    app:border_color="@color/word_black"
+                    app:border_width="@dimen/x1" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x5"
+                    android:layout_toRightOf="@id/civ_user_icon"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/bg_white"
+                    android:textSize="@dimen/x22" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_dr_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:ellipsize="end"
+                android:ems="8"
+                android:enabled="true"
+                android:paddingBottom="@dimen/x8"
+                android:paddingLeft="@dimen/x8"
+                android:paddingRight="@dimen/x8"
+                android:singleLine="true"
+                android:textColor="@color/bg_white"
+                android:textSize="@dimen/x32" />
+
+            <TextView
+                android:id="@+id/tv_dr_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_dr_introduce"
+                android:layout_marginLeft="@dimen/x10"
+                android:drawableLeft="@drawable/distance_icon"
+                android:drawablePadding="@dimen/x6"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/bg_white"
+                android:textSize="@dimen/x22" />
+
+            <TextView
+                android:id="@+id/tv_dr_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_dr_introduce"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x10"
+                android:ellipsize="end"
+                android:paddingRight="@dimen/x10"
+                android:singleLine="true"
+                android:textColor="@color/bg_white"
+                android:textSize="@dimen/x22" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

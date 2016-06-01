@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y30" >
+
+        <com.aliamauri.meat.view.CircleImageView
+            android:id="@+id/ci_talk_other_headicon"
+            android:layout_width="@dimen/x78"
+            android:layout_height="@dimen/y78"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30" />
+
+        <TextView
+            android:id="@+id/tv_talk_other_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x6"
+            android:layout_marginRight="@dimen/x6"
+            android:layout_toRightOf="@+id/ci_talk_other_headicon"
+            android:background="@drawable/other_talk_frame_content"
+            android:gravity="center_vertical"
+            android:maxWidth="@dimen/x458"
+            android:minHeight="@dimen/y78"
+            android:minWidth="@dimen/x120"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x36" />
+
+        <ImageView
+            android:id="@+id/iv_talk_other_speechicon"
+            android:layout_width="@dimen/x25"
+            android:layout_height="@dimen/y38"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_toRightOf="@+id/ci_talk_other_headicon"
+            android:src="@drawable/other_speech_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_talk_other_speechtime"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y78"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_toRightOf="@+id/tv_talk_other_content"
+            android:gravity="center_vertical"
+            android:text="@string/second"
+            android:textSize="@dimen/x32"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_talk_other_unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_toRightOf="@+id/tv_talk_other_speechtime"
+            android:src="@drawable/talk_unread"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

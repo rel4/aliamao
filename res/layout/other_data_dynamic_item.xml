@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/tv_od_dynamicpic"
+        android:layout_width="@dimen/x185"
+        android:layout_height="@dimen/y100"
+        android:layout_marginLeft="@dimen/x20" />
+
+</LinearLayout>

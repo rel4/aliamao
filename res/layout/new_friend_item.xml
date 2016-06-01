@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_friend_classify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x30"
+        android:textColor="@color/word_greyblack"
+        android:visibility="gone" >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y108"
+        android:background="@color/bg_white" >
+
+        <com.aliamauri.meat.view.CircleImageView
+            android:id="@+id/civ_nfi_headicon"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/y70"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/civ_nfi_headicon"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/civ_nfi_telname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名字"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+
+            <TextView
+                android:id="@+id/civ_nfi_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名字"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x28" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/civ_nfi_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:background="@drawable/bg_for_add_selectstyle"
+            android:gravity="center"
+            android:paddingBottom="@dimen/y5"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:paddingTop="@dimen/y5"
+            android:text="已添加"
+            android:textColor="@drawable/color_white_greyblack_selectstyle2"
+            android:textSize="@dimen/x32" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+</LinearLayout>

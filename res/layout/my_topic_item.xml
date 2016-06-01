@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y310"
+        android:background="@color/bg_white" >
+
+        <View style="@style/horizontal_line_style" />
+
+        <RelativeLayout
+            android:id="@+id/rl_item_title_ht"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:src="@drawable/icon_myspace_talk" />
+
+            <TextView
+                android:id="@+id/tv_more_go_ht_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:drawablePadding="@dimen/x10"
+                android:drawableRight="@drawable/wd_jr"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x36" />
+        </RelativeLayout>
+
+        <View
+            style="@style/horizontal_line_style"
+            android:layout_below="@id/rl_item_title_ht"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginRight="@dimen/x20" />
+
+        <RelativeLayout
+            android:id="@+id/rl_item_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y110"
+            android:layout_below="@id/rl_item_title_ht"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x100" >
+
+            <com.aliamauri.meat.view.CircleImageView
+                android:id="@+id/civ_symposium_icon_1"
+                android:layout_width="@dimen/x70"
+                android:layout_height="@dimen/y70"
+                android:layout_centerVertical="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_toRightOf="@id/civ_symposium_icon_1"
+                android:gravity="center|left"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_ht_title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxEms="9"
+                    android:singleLine="true"
+                    android:text="@string/loading"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/x32" />
+
+                <TextView
+                    android:id="@+id/tv_ht_introduce_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxEms="10"
+                    android:singleLine="true"
+                    android:text="@string/loading"
+                    android:textColor="@color/word_greyblack"
+                    android:textSize="@dimen/x24" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_add_group_1"
+                android:layout_width="@dimen/x130"
+                android:layout_height="@dimen/y55"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/item_btn_bg"
+                android:text="加入"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/x26" />
+        </RelativeLayout>
+
+        <View
+            style="@style/horizontal_line_style"
+            android:layout_below="@id/rl_item_1"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginRight="@dimen/x20" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y110"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/rl_item_1"
+            android:layout_marginLeft="@dimen/x100" >
+
+            <com.aliamauri.meat.view.CircleImageView
+                android:id="@+id/civ_symposium_icon_2"
+                android:layout_width="@dimen/x70"
+                android:layout_height="@dimen/y70"
+                android:layout_centerVertical="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_toRightOf="@id/civ_symposium_icon_2"
+                android:gravity="center|left"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_ht_title_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxEms="9"
+                    android:singleLine="true"
+                    android:text="@string/loading"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/x32" />
+
+                <TextView
+                    android:id="@+id/tv_ht_introduce_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxEms="10"
+                    android:singleLine="true"
+                    android:text="@string/loading"
+                    android:textColor="@color/word_greyblack"
+                    android:textSize="@dimen/x24" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_add_group_2"
+                android:layout_width="@dimen/x130"
+                android:layout_height="@dimen/y55"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/item_btn_bg"
+                android:text="加入"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/x26" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:layout_marginBottom="@dimen/y20" />
+
+</LinearLayout>

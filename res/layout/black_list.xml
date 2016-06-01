@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical"
+    tools:context=".BlackListActivity" >
+
+    <include layout="@layout/title" />
+
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff4f7f9"
+        android:cacheColorHint="#00000000"
+        android:divider="#dfdfdf"
+        android:dividerHeight="@dimen/y1"
+        />
+
+</LinearLayout>

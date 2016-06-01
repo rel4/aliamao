@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:background="@color/bg_white" >
+
+        <LinearLayout
+            android:id="@+id/ll_idmt_attentionminum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/v_idmt_attention"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/x32"
+                android:layout_height="@dimen/x34"
+                android:src="@drawable/icon_myspace_attentionmine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="TA关注的"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+
+            <TextView
+                android:id="@+id/tv_idmt_attentionminum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="352"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x32" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_idmt_attention"
+            style="@style/vertical_line_style"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginTop="@dimen/y20" />
+
+        <LinearLayout
+            android:id="@+id/ll_idmt_myfansnum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/v_idmt_attention"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/x32"
+                android:layout_height="@dimen/x34"
+                android:src="@drawable/icon_myspace_myattention" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="关注TA的"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+
+            <TextView
+                android:id="@+id/tv_idmt_myfansnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="352"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x32" /> 
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <View
+        style="@style/horizontal_line_style"
+        android:layout_marginTop="@dimen/y30" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y335"
+        android:background="@color/bg_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/y20"
+        android:paddingLeft="@dimen/x20" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y90"
+            android:drawableLeft="@drawable/icon_doyendetail_new"
+            android:drawablePadding="@dimen/x10"
+            android:gravity="center"
+            android:text="最新作品"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <com.aliamauri.meat.view.HorizontalListView
+            android:id="@+id/hlv_add_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <View
+        style="@style/horizontal_line_style"
+        android:layout_marginTop="@dimen/y30" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:background="@color/bg_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/y20"
+        android:paddingTop="@dimen/y20" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:drawableLeft="@drawable/icon_doyendetail_allmovies"
+            android:drawablePadding="@dimen/x10"
+            android:gravity="center"
+            android:text="全部作品"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+    </LinearLayout>
+
+</LinearLayout>

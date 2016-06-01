@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 双条件 -->
+    <item android:drawable="@drawable/shape_border_maincolor_blackline" android:state_selected="true"/>
+    <item android:drawable="@drawable/shape_border_white_blackline"/>
+    <!-- default color 当对应状态下没有定义时使用此default -->
+
+</selector>

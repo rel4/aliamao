@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="#000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/v_gfp_center" >
+
+        <RelativeLayout
+            android:id="@+id/iv_end_left"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y20"
+            android:layout_alignLeft="@+id/iv_hand_left"
+            android:layout_alignRight="@+id/iv_hand_left"
+            android:layout_alignTop="@+id/iv_gfp_left" >
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_gfp_left"
+            android:layout_width="@dimen/x433"
+            android:layout_height="@dimen/y370"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/y50"
+            android:src="@drawable/bg_gif_play_top" />
+
+        <com.ant.liao.GifView
+            android:id="@+id/gifView_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/y150"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_hand_left"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y120"
+            android:layout_alignBottom="@+id/iv_gfp_left"
+            android:layout_marginBottom="@dimen/y70"
+            android:layout_marginLeft="@dimen/y200"
+            android:src="@drawable/icon_hand_right" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_gfp_center"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/v_gfp_center" >
+
+        <RelativeLayout
+            android:id="@+id/iv_end_right"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y20"
+            android:layout_alignLeft="@+id/iv_hand_right"
+            android:layout_alignRight="@+id/iv_hand_right"
+            android:layout_alignTop="@+id/iv_gfp_right" >
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_gfp_right"
+            android:layout_width="@dimen/x433"
+            android:layout_height="@dimen/y370"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x50"
+            android:src="@drawable/bg_gif_play_buttom" />
+
+        <com.ant.liao.GifView
+            android:id="@+id/gifView_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_hand_right"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y120"
+            android:layout_alignBottom="@+id/iv_gfp_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/y70"
+            android:layout_marginRight="@dimen/x200"
+            android:src="@drawable/icon_newhand_hand" />
+    </RelativeLayout>
+
+</RelativeLayout>

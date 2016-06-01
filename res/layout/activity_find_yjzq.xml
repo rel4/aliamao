@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_greywhite"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y98"
+                android:background="@color/bg_white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_find_hljy_rmgg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_find_hljy_rmgg_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/find_yjzq_fbxx_title"
+                        android:textSize="@dimen/x32" >
+                    </TextView>
+
+                    <View
+                        android:id="@+id/v_find_hljy_rmgg_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/main_color" >
+                    </View>
+                </RelativeLayout>
+
+                <View
+                    style="@style/vertical_line_style"
+                    android:layout_marginBottom="@dimen/y15"
+                    android:layout_marginTop="@dimen/y15" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_find_hljy_xhta"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_find_hljy_xhta_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/find_yjzq_fj_title"
+                        android:textSize="@dimen/x32" >
+                    </TextView>
+
+                    <View
+                        android:id="@+id/v_find_hljy_xhta_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/main_color"
+                        android:visibility="gone" >
+                    </View>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/bmapView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:clickable="true" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_show_frined_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/bg_map_layout"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:visibility="gone" >
+
+                    <com.aliamauri.meat.view.CircleImageView
+                        android:id="@+id/civ_yjzq_friend_icon"
+                        android:layout_width="@dimen/x240"
+                        android:layout_height="@dimen/y240"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/y150" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_name_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/civ_yjzq_friend_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/y60"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_yjzq_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/x30"
+                            android:ellipsize="end"
+                            android:maxLength="7"
+                            android:singleLine="true"
+                            android:textColor="@color/bg_white"
+                            android:textSize="@dimen/x42" />
+
+                        <TextView
+                            android:id="@+id/tv_yjzq_user_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/bg_distance_icon"
+                            android:drawablePadding="@dimen/x10"
+                            android:ellipsize="end"
+                            android:maxLength="7"
+                            android:singleLine="true"
+                            android:textColor="@color/bg_white"
+                            android:textSize="@dimen/x42" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_yjzq_content"
+                        android:layout_width="@dimen/x400"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_name_location"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/y40"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textColor="@color/bg_white"
+                        android:textSize="@dimen/x32" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y98"
+                        android:layout_below="@id/tv_yjzq_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/y90"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/btn_yjzq_left"
+                            android:layout_width="@dimen/x240"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="@dimen/x40"
+                            android:background="@drawable/btn_yjzq_left"
+                            android:gravity="center"
+                            android:text="@string/find_hljy_hyTa_btn"
+                            android:textColor="@color/bg_white"
+                            android:textSize="@dimen/x42" />
+
+                        <TextView
+                            android:id="@+id/btn_yjzq_right"
+                            android:layout_width="@dimen/x240"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_yjzq_right"
+                            android:gravity="center"
+                            android:text="@string/find_hljy_hl_btn"
+                            android:textColor="@color/bg_white"
+                            android:textSize="@dimen/x42" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_message_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/y98"
+        android:layout_gravity="bottom"
+        android:background="@color/bg_white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30" >
+
+        <TextView
+            android:id="@+id/tv_btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x30"
+            android:text="@string/text_dialog_btn_ok"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <View
+            style="@style/vertical_line_style"
+            android:layout_marginBottom="@dimen/y15"
+            android:layout_marginTop="@dimen/y15"
+            android:layout_toLeftOf="@id/tv_btn_ok" />
+
+        <EditText
+            android:id="@+id/et_message_import"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/tv_btn_ok"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="写点什么吧……(最多30字)"
+            android:inputType="textMultiLine"
+            android:paddingBottom="@dimen/y15"
+            android:paddingTop="@dimen/y15"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+    </RelativeLayout>
+
+</FrameLayout>

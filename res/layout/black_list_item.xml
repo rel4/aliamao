@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_point_bg"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/item_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingBottom="@dimen/y15"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:paddingTop="@dimen/y15" >
+
+        <ImageView
+            android:id="@+id/iv_blacklistitem_orangecircle"
+            android:layout_width="@dimen/x45"
+            android:layout_height="@dimen/y45"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:src="@drawable/icon_oragne_circle_style" />
+
+        <com.aliamauri.meat.view.CircleImageView
+            android:id="@+id/ci_selectcondition_icon"
+            android:layout_width="@dimen/x140"
+            android:layout_height="@dimen/y140"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_blacklistitem_orangecircle" />
+
+        <android.widget.LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/ci_selectcondition_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <android.widget.TextView
+                android:id="@+id/tv_bli_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名字"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x36" />
+        </android.widget.LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ci_selectcondition_icon"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ci_selectcondition_icon"
+            android:layout_alignLeft="@id/tv_title"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/grey"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_title"
+            android:textColor="@color/grey"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/right_bg" >
+
+        <TextView
+            android:id="@+id/item_right_txt"
+            android:layout_width="@dimen/x250"
+            android:layout_height="@dimen/y200"
+            android:layout_centerInParent="true"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:text="解除"
+            android:textColor="@color/blur_bg" />
+    </RelativeLayout>
+
+</LinearLayout>

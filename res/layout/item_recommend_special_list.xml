@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circleimageview="http://schemas.android.com/apk/res/com.aliamauri.meat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite" >
+
+    <LinearLayout
+        android:id="@+id/ll_ir_special"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y390" >
+
+            <ImageView
+                android:id="@+id/tv_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launch" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/x30"
+                android:paddingRight="@dimen/x15"
+                android:paddingTop="@dimen/x30" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.aliamauri.meat.view.CircleImageView
+                        android:id="@+id/iv_avater_one"
+                        android:layout_width="@dimen/x50"
+                        android:layout_height="@dimen/x50"
+                        android:layout_alignParentRight="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_msg_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x200"
+                        android:layout_marginRight="@dimen/x5"
+                        android:layout_toLeftOf="@+id/iv_avater_one"
+                        android:background="@drawable/shape_show_corner"
+                        android:enabled="true"
+                        android:gravity="center"
+                        android:maxEms="20"
+                        android:padding="@dimen/x5"
+                        android:singleLine="true"
+                        android:textColor="@color/bg_white"
+                        android:textSize="13sp" >
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y20" >
+
+                    <com.aliamauri.meat.view.CircleImageView
+                        android:id="@+id/iv_avater_two"
+                        android:layout_width="@dimen/x50"
+                        android:layout_height="@dimen/x50"
+                        android:layout_alignParentRight="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_msg_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x200"
+                        android:layout_marginRight="@dimen/x5"
+                        android:layout_toLeftOf="@+id/iv_avater_two"
+                        android:background="@drawable/shape_show_corner"
+                        android:enabled="true"
+                        android:maxEms="20"
+                        android:padding="@dimen/x5"
+                        android:singleLine="true"
+                        android:textColor="@color/bg_white"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y20" >
+
+                    <com.aliamauri.meat.view.CircleImageView
+                        android:id="@+id/iv_avater_three"
+                        android:layout_width="@dimen/x50"
+                        android:layout_height="@dimen/x50"
+                        android:layout_alignParentRight="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_msg_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x200"
+                        android:layout_marginRight="@dimen/x5"
+                        android:layout_toLeftOf="@+id/iv_avater_three"
+                        android:background="@drawable/shape_show_corner"
+                        android:enabled="true"
+                        android:maxEms="20"
+                        android:padding="@dimen/x5"
+                        android:singleLine="true"
+                        android:textColor="@color/bg_white"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y20" >
+
+                    <com.aliamauri.meat.view.CircleImageView
+                        android:id="@+id/iv_avater_four"
+                        android:layout_width="@dimen/x50"
+                        android:layout_height="@dimen/x50"
+                        android:layout_alignParentRight="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_msg_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x200"
+                        android:layout_marginRight="@dimen/x5"
+                        android:layout_toLeftOf="@+id/iv_avater_four"
+                        android:background="@drawable/shape_show_corner"
+                        android:enabled="true"
+                        android:maxEms="20"
+                        android:padding="@dimen/x5"
+                        android:singleLine="true"
+                        android:textColor="@color/bg_white"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_play_circle" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/play_icon" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/x170"
+                android:layout_height="@dimen/y170"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launch" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_white" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x140"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_ifdtl_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="true"
+                        android:text="@string/loading"
+                        android:textColor="@color/word_black"
+                        android:textSize="@dimen/x30" />
+
+                    <TextView
+                        android:id="@+id/tv_ifdtl_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="true"
+                        android:text="@string/loading"
+                        android:textColor="@color/word_greyblack"
+                        android:textSize="@dimen/x26" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ifdtl_bright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_film_dz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/head"
+                        android:drawablePadding="@dimen/x10"
+                        android:text="@string/loading"
+                        android:textColor="@color/word_greyblack"
+                        android:textSize="@dimen/x22" />
+
+                    <View
+                        style="@style/vertical_line_style"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:layout_marginRight="@dimen/x30" />
+
+                    <TextView
+                        android:id="@+id/tv_film_pl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/pingll_iocn"
+                        android:drawablePadding="@dimen/x10"
+                        android:text="@string/loading"
+                        android:textColor="@color/word_greyblack"
+                        android:textSize="@dimen/x22" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ifdtl_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_ir_special"
+        android:background="@color/bg_white" >
+
+        <TextView
+            android:id="@+id/tv_film_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:enabled="true"
+            android:maxLines="4"
+            android:paddingLeft="@dimen/x30"
+            android:text="@string/loading"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/x32" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20"
+        android:layout_below="@+id/rl_ifdtl_buttom"
+        android:background="#f2f2f2" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y20"
+            android:background="@drawable/bg_ifdtl_divider" />
+    </RelativeLayout>
+
+    <com.aliamauri.meat.view.CircleImageViewWhite
+        android:id="@+id/civ_ifdtl_headicon"
+        android:layout_width="@dimen/x110"
+        android:layout_height="@dimen/y110"
+        android:layout_alignBottom="@+id/ll_ir_special"
+        android:layout_marginBottom="@dimen/y30"
+        android:layout_marginLeft="@dimen/x20"
+        android:src="@drawable/ic_launch"
+        circleimageview:border_width="@dimen/x20"
+        circleimageview:paint_style="1" />
+
+</RelativeLayout>

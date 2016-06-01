@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_fbt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96"
+        android:background="@color/title_color" >
+
+        <!-- 附近    中间的开关按钮组 -->
+
+        <LinearLayout
+            android:id="@+id/ll_fragment_base_title_btns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/y15"
+            android:paddingTop="@dimen/y15"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/btn_fragment_base_title_btn_dt"
+                style="@style/fragment_top_title_text"
+                android:background="@drawable/title_name_dt_h"
+                android:text="@string/nearby_title_dt" />
+
+            <!-- 与资源库换下开始 -->
+
+            <Button
+                android:id="@+id/btn_fragment_base_title_btn_r"
+                style="@style/fragment_top_title_text"
+                android:background="@drawable/title_name_ht_q"
+                android:text="@string/nearby_title_r" />
+            <!-- 与资源库换下结束  title_name_r_q -->
+
+            <Button
+                android:id="@+id/btn_fragment_base_title_btn_ht"
+                style="@style/fragment_top_title_text"
+                android:background="@drawable/title_name_ht_q"
+                android:text="@string/nearby_title_ht" />
+        </LinearLayout>
+        <!-- 查找页的搜索框 -->
+
+        <LinearLayout
+            android:id="@+id/ll_title_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x20"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/et_title_search_edit"
+                style="@style/eidtText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/y75"
+                android:layout_weight="1"
+                android:background="@drawable/title_search_bg"
+                android:drawableLeft="@drawable/fdj"
+                android:drawablePadding="@dimen/x10"
+                android:hint="@string/search_title_hint_content"
+                android:paddingLeft="@dimen/x20"
+                android:singleLine="true"
+                android:textColor="@color/title_word_black"
+                android:textSize="@dimen/x32" />
+
+            <TextView
+                android:id="@+id/btn_title_search_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/search_title_right_confirm"
+                android:textColor="@color/bg_white"
+                android:textSize="@dimen/x32" />
+        </LinearLayout>
+        <!-- 中间标题 -->
+
+        <TextView
+            android:id="@+id/tv_fragment_base_title_tag_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/x38"
+            android:visibility="gone" />
+        <!-- 右边的标签 -->
+
+        <TextView
+            android:id="@+id/btn_fragment_base_title_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x20"
+            android:background="@null"
+            android:gravity="center"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/x32" />
+
+        <ImageView
+            android:id="@+id/iv_fbt_gototakevideo"
+            android:layout_width="@dimen/x91"
+            android:layout_height="@dimen/y78"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/x20"
+            android:src="@drawable/icon_gototakvideo"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_new_contact"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/common_tab_bg"
+            android:clickable="true"
+            android:padding="@dimen/x30"
+            android:scaleType="centerInside"
+            android:src="@drawable/add"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/fl_upload_right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/x10"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateDrawable="@drawable/upload_progress"
+                android:indeterminateDuration="700" />
+        </FrameLayout>
+
+        <View
+            style="@style/horizontal_line_style"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_color" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_fragment_base_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_greywhite" >
+    </FrameLayout>
+
+</LinearLayout>

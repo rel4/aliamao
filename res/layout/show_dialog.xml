@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_sd_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y90"
+        android:background="@color/bg_white"
+        android:gravity="center"
+        android:text="确定移出成员"
+        android:textColor="@color/word_black"
+        android:textSize="@dimen/x36" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150"
+        android:layout_marginTop="@dimen/y30" >
+
+        <TextView
+            android:id="@+id/tv_sd_yes"
+            android:layout_width="@dimen/x230"
+            android:layout_height="@dimen/y80"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:background="@drawable/shape_bgorange_border"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/x36" />
+
+        <TextView
+            android:id="@+id/tv_sd_cancel"
+            android:layout_width="@dimen/x230"
+            android:layout_height="@dimen/y80"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:background="@drawable/shape_bgorange_border"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/x36" />
+    </RelativeLayout>
+
+</LinearLayout>

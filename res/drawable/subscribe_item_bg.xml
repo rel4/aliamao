@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true" android:state_selected="true"><shape android:shape="rectangle">
+            <stroke android:dashGap="@dimen/x4" android:dashWidth="@dimen/x8" android:width="@dimen/x2" android:color="@color/bg_app_line" />
+
+            <solid android:color="@color/bg_white" />
+
+            <corners android:radius="30dp" />
+        </shape></item>
+    <item android:state_selected="true"><shape android:shape="rectangle">
+            <stroke android:width="@dimen/x2" android:color="@color/bg_red" />
+
+            <corners android:radius="30dp" />
+
+            <solid android:color="@color/bg_white" />
+        </shape></item>
+    <item android:state_enabled="false"><shape android:shape="rectangle">
+            <stroke android:width="@dimen/x1" android:color="@color/bg_app_line" />
+
+            <corners android:radius="30dp" />
+
+            <solid android:shape="rectangle" android:color="@color/bg_white" />
+        </shape></item>
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+            <stroke android:width="@dimen/x1" android:color="@color/bg_app_line" />
+
+            <corners android:radius="30dp" />
+
+            <solid android:color="@color/bg_white" />
+        </shape></item>
+    <item><shape android:shape="rectangle">
+            <stroke android:width="@dimen/x1" android:color="@color/bg_app_line" />
+
+            <corners android:radius="30dp" />
+
+            <solid android:color="@color/bg_white" />
+        </shape></item>
+
+</selector>

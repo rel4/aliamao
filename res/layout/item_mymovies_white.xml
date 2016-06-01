@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/x20"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/iv_imymovies_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y170"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launch" />
+
+    <TextView
+        android:id="@+id/tv_imymovies_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_imymovies_pic"
+        android:gravity="center"
+        android:text="电影标题"
+        android:textColor="@color/word_black"
+        android:textSize="@dimen/x32" />
+
+</RelativeLayout>

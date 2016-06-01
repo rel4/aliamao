@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="@null" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title" />
+
+        <WebView
+            android:id="@+id/wv_webpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_flush"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_back_error" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/custom_progress" />
+
+</RelativeLayout>

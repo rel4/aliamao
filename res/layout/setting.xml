@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_accountbind"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:background="@color/bg_white"
+        android:paddingRight="@dimen/x20" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center"
+            android:text="帐号绑定"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <ImageView
+            android:id="@+id/iv_myspace_jiantou2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/wd_jr" />
+    </RelativeLayout>
+
+  
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:background="@color/bg_white"
+        android:visibility="gone"
+        android:paddingRight="@dimen/x20" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center"
+            android:text="消息设置"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/wd_jr" />
+    </RelativeLayout>
+
+   <View style="@style/horizontal_line_style" />
+
+    <View
+        style="@style/horizontal_line_style"
+        android:layout_marginTop="@dimen/y20" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_modifypwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:background="@color/bg_white"
+        android:paddingRight="@dimen/x20" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center"
+            android:text="密码设置"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/wd_jr" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <View
+        style="@style/horizontal_line_style"
+        android:layout_marginTop="@dimen/y20" />
+
+    <RelativeLayout
+        android:id="@+id/rl_myspace_mydynamic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:background="@color/bg_white"
+        android:paddingRight="@dimen/x20" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center"
+            android:text="用户帮助"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/wd_jr" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <View
+        style="@style/horizontal_line_style"
+        android:layout_marginTop="@dimen/y20" />
+
+    <RelativeLayout
+        android:id="@+id/rl_cache_clean"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:background="@color/bg_white"
+        android:paddingRight="@dimen/x20" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center"
+            android:text="清理缓存"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <TextView
+            android:id="@+id/tv_cache_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <View
+        style="@style/horizontal_line_style"
+        android:layout_marginTop="@dimen/y20" />
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_quiet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:background="@color/bg_white"
+        android:paddingRight="@dimen/x20" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center"
+            android:text="退出当前帐号"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+</LinearLayout>

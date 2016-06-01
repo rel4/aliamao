@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:gravity="center"
+            android:background="@color/bg_white"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_find_hljy_rmgg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_find_hljy_rmgg_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/x32"
+                    android:textColor="@color/title_word_black"
+                    android:text="@string/find_hljy_rmgg_title" >
+                </TextView>
+
+                <View
+                    android:id="@+id/v_find_hljy_rmgg_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y2"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/main_color" >
+                </View>
+              
+            </RelativeLayout>
+
+            <View
+                
+                style="@style/vertical_line_style"
+                android:layout_marginBottom="@dimen/y15"
+                android:layout_marginTop="@dimen/y15" />
+
+            <RelativeLayout
+                android:id="@+id/rl_find_hljy_xhta"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                      android:id="@+id/tv_find_hljy_xhta_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/title_word_black"
+                    android:textSize="@dimen/x32"
+                    android:text="@string/find_hljy_xhTa_title" >
+                </TextView>
+
+                <View
+					android:id="@+id/v_find_hljy_xhta_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y2"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/main_color"
+                    android:visibility="gone" >
+                </View>
+                
+            </RelativeLayout>
+        </LinearLayout>
+
+       
+        
+         <LinearLayout
+             android:id="@+id/ll_base_hljy_bottom_layout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:background="@color/bg_white"
+             android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/x20"
+            android:text="@string/hljy_bottom_title_name"
+            android:textColor="@color/title_word_black"
+            android:textSize="@dimen/x32" />
+
+        <View style="@style/horizontal_line_style" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100" >
+
+            <ImageView
+                android:id="@+id/iv_btn_base_hljy_swap"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x20"
+                android:src="@drawable/wd_jr" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_base_hljy_usericon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_toLeftOf="@id/iv_btn_base_hljy_swap"
+                android:scrollbars="none"
+                 >
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/btn_base_hljy_spyh"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hljy_right_spyh"
+                android:textColor="@color/title_word_black"
+                android:textSize="@dimen/x32" />
+
+            <View
+                style="@style/vertical_line_style"
+                android:layout_marginBottom="@dimen/y15"
+                android:layout_marginTop="@dimen/y15" />
+
+            <TextView
+                android:id="@+id/btn_base_hljy_yjzq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hljy_left_yjzq"
+                android:textColor="@color/title_word_black"
+                android:textSize="@dimen/x32" />
+        </LinearLayout>
+    </LinearLayout>
+    
+     <FrameLayout
+            android:id="@+id/fl_find_hljy_content"
+            android:layout_below="@id/ll_btn_layout"
+            android:layout_above="@id/ll_base_hljy_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+     <View
+        style="@style/horizontal_line_style"
+        android:layout_below="@id/fl_find_hljy_content" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y20"
+        android:layout_marginTop="@dimen/y20" >
+
+        <TextView
+            android:id="@+id/tv_head_view_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:text="@string/item_ht_title_name_jctj"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <ImageView
+            android:id="@+id/iv_head_view_title_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/y10"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30"
+            android:paddingTop="@dimen/y10"
+            android:src="@drawable/sy_hyh" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y170"
+        android:layout_marginLeft="@dimen/x30" >
+
+        <com.aliamauri.meat.view.CircleImageView
+            android:id="@+id/civ_head_view_icon_1"
+            android:layout_width="@dimen/x140"
+            android:layout_height="@dimen/y140"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_toRightOf="@+id/civ_head_view_icon_1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                >
+
+                <TextView
+                    android:id="@+id/tv_heand_view_name_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading"
+                     android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/word_black"
+                    android:textSize="@dimen/x36" />
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_tj"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/bg_white"
+                    android:paddingTop="@dimen/y2"
+                    android:paddingBottom="@dimen/y2"
+                    android:paddingLeft="@dimen/x8"
+                    android:paddingRight="@dimen/x8"
+                    android:textSize="@dimen/x24"
+                    android:background="@drawable/bg_ht_tj"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/x43"
+                    android:layout_height="@dimen/y30"
+                    android:src="@drawable/talk_groupnumber_icon" />
+
+                <TextView
+                    android:id="@+id/tv_head_viewperson_num_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:gravity="center_vertical"
+                    android:text="0/000"
+                    android:textColor="@color/word_greyblack"
+                    android:textSize="@dimen/x24" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_head_view_introduce_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:maxEms="15"
+                android:singleLine="true"
+                android:text="@string/loading"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x26" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y170"
+        android:layout_marginLeft="@dimen/x30" >
+
+        <com.aliamauri.meat.view.CircleImageView
+            android:id="@+id/civ_head_view_icon_2"
+            android:layout_width="@dimen/x140"
+            android:layout_height="@dimen/y140"
+            android:layout_centerVertical="true"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_toRightOf="@+id/civ_head_view_icon_2"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+           <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                >
+
+                <TextView
+                    android:id="@+id/tv_heand_view_name_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading"
+                     android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/word_black"
+                    android:textSize="@dimen/x36" />
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_tj"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/bg_white"
+                    android:paddingTop="@dimen/y4"
+                    android:paddingBottom="@dimen/y4"
+                    android:paddingLeft="@dimen/x8"
+                    android:paddingRight="@dimen/x8"
+                    android:textSize="@dimen/x24"
+                    android:background="@drawable/bg_ht_tj"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/x43"
+                    android:layout_height="@dimen/y30"
+                    android:src="@drawable/talk_groupnumber_icon" />
+
+                <TextView
+                    android:id="@+id/tv_head_viewperson_num_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:gravity="center_vertical"
+                    android:text="569/1000"
+                    android:textColor="@color/word_greyblack"
+                    android:textSize="@dimen/x24" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_head_view_introduce_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:maxEms="15"
+                android:singleLine="true"
+                android:text="@string/loading"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x26" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y170"
+        android:layout_marginLeft="@dimen/x30" >
+
+        <com.aliamauri.meat.view.CircleImageView
+            android:id="@+id/civ_head_view_icon_3"
+            android:layout_width="@dimen/x140"
+            android:layout_height="@dimen/y140"
+            android:layout_centerVertical="true"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_toRightOf="@+id/civ_head_view_icon_3"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                >
+
+                <TextView
+                    android:id="@+id/tv_heand_view_name_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading"
+                     android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/word_black"
+                    android:textSize="@dimen/x36" />
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_tj"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/bg_white"
+                    android:paddingTop="@dimen/y4"
+                    android:paddingBottom="@dimen/y4"
+                    android:paddingLeft="@dimen/x8"
+                    android:paddingRight="@dimen/x8"
+                    android:textSize="@dimen/x24"
+                    android:background="@drawable/bg_ht_tj"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/x43"
+                    android:layout_height="@dimen/y30"
+                    android:src="@drawable/talk_groupnumber_icon" />
+
+                <TextView
+                    android:id="@+id/tv_head_viewperson_num_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:gravity="center_vertical"
+                    android:text="569/1000"
+                    android:textColor="@color/word_greyblack"
+                    android:textSize="@dimen/x24" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_head_view_introduce_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:maxEms="15"
+                android:singleLine="true"
+                android:text="@string/loading"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x26" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:layout_height="@dimen/y30"
+        android:background="@color/bg_greywhite" />
+
+</LinearLayout>

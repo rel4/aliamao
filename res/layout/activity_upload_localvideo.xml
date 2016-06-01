@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/title" />
+
+            <RelativeLayout
+                android:id="@+id/rl_aul_movies"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y320" >
+
+                <ImageView
+                    android:id="@+id/iv_aul_movies"
+                    android:layout_width="@dimen/x330"
+                    android:layout_height="@dimen/y220"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_launch" />
+
+                <ImageView
+                    android:layout_width="@dimen/x97"
+                    android:layout_height="@dimen/y96"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_uploadvideo_play" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y90"
+                android:background="@color/bg_white"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30" >
+
+                <ImageView
+                    android:id="@+id/iv_show1"
+                    android:layout_width="@dimen/x28"
+                    android:layout_height="@dimen/y34"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_uploadvideo_title" />
+
+                <EditText
+                    android:id="@+id/et_aul_title"
+                    style="@style/eidtText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_show1"
+                    android:background="@null"
+                    android:hint="标题"
+                    android:singleLine="true"
+                    android:textColor="@color/word_greyblack"
+                    android:textSize="@dimen/x32" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y20"
+                android:background="@color/bg_white"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30" >
+
+                <ImageView
+                    android:id="@+id/iv_show2"
+                    android:layout_width="@dimen/x28"
+                    android:layout_height="@dimen/y34"
+                    android:layout_marginTop="@dimen/y30"
+                    android:src="@drawable/icon_uploadvideo_content" />
+
+                <EditText
+                    android:id="@+id/et_aul_desc"
+                    style="@style/eidtText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_show2"
+                    android:background="@null"
+                    android:hint="介绍"
+                    android:minHeight="@dimen/y90"
+                    android:textColor="@color/word_greyblack"
+                    android:textSize="@dimen/x32" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_aul_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/y30"
+                android:drawableLeft="@drawable/icon_uploadvideo_type"
+                android:drawablePadding="@dimen/x10"
+                android:gravity="center"
+                android:text="类型"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x32" />
+
+            <com.aliamauri.meat.view.MyGridView
+                android:id="@+id/ptr_aulocalvideo_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginRight="@dimen/x50"
+                android:divider="@null"
+                android:numColumns="4"
+                android:scrollbars="none" >
+            </com.aliamauri.meat.view.MyGridView>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@color/word_black"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/custom_progress"
+            android:indeterminateDuration="700" />
+    </RelativeLayout>
+
+</RelativeLayout>

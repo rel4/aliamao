@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_groupmember_select"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y70"
+        android:layout_marginTop="@dimen/y30"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x40" >
+
+        <EditText
+            android:id="@+id/et_tm_find"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_toLeftOf="@+id/iv_tm_find"
+            android:background="@drawable/shape_border_circle"
+            android:ems="10"
+            android:paddingLeft="@dimen/x30" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/iv_tm_find"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/y42"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:src="@drawable/search_icon" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_groupmenber_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y30"
+        android:divider="@null" >
+    </ListView>
+
+</LinearLayout>

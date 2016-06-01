@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/layout_title_ggxq"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/layout_title_ggxq"
+        android:background="@color/bg_greywhite" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/rl_ggxq_title_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:background="@color/bg_white" >
+
+                <com.aliamauri.meat.view.CircleImageView
+                    android:id="@+id/civ_hfpy_user_icon"
+                    android:layout_width="@dimen/x60"
+                    android:layout_height="@dimen/y60"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/y20"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginRight="@dimen/y20"
+                    android:layout_marginTop="@dimen/y20" />
+
+                <TextView
+                    android:id="@+id/tv_hfpy_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/civ_hfpy_user_icon"
+                    android:textColor="@color/title_word_black"
+                    android:textSize="@dimen/x32" />
+
+                <TextView
+                    android:id="@+id/tv_hfpy_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/x20"
+                    android:textColor="@color/time_word_black"
+                    android:textSize="@dimen/x28" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_hfpy_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_ggxq_title_1"
+                android:layout_marginTop="@dimen/x1"
+                android:background="@color/bg_white"
+                android:paddingBottom="@dimen/y15"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"
+                android:paddingTop="@dimen/y15"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+
+            <View style="@style/horizontal_line_style" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/bg_greywhite"
+            
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_hfpy_impot_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y240"
+                android:background="@color/bg_white"
+                android:gravity="top|left"
+                android:hint="输入回应信息~~（30字以内）"
+                android:paddingBottom="@dimen/y15"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30"
+                android:paddingTop="@dimen/y20"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x36" />
+
+            <View style="@style/horizontal_line_style" />
+
+            <Button
+                android:id="@+id/btn_hfpy_ok"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y98"
+                android:background="@color/bg_white"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30"
+                android:text="@string/find_hljy_hyTa_btn"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x36" />
+
+            <View style="@style/horizontal_line_style" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

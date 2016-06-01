@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <com.aliamauri.meat.view.RefreshListView
+        android:id="@+id/rlv_talk_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y30" >
+    </com.aliamauri.meat.view.RefreshListView>
+
+    <LinearLayout
+        android:id="@+id/rl_talklist_nolist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/talk_nolist" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="话题=地点+兴趣"
+            android:textSize="@dimen/x26"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y10"
+            android:gravity="center"
+            android:text="欢迎创建或加入话题"
+            android:textSize="@dimen/x24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y10"
+            android:gravity="center"
+            android:text="发现兴趣相投的好友"
+            android:textSize="@dimen/x24" />
+    </LinearLayout>
+
+</LinearLayout>

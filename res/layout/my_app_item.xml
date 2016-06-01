@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+
+    <View
+        style="@style/horizontal_line_style"
+         />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/y30"
+            android:layout_marginTop="@dimen/y30"
+            android:background="@null"
+            android:lines="1"
+            android:text="@string/search_chile_title_yytj"
+            android:textColor="@color/word_greyblack"
+            android:textSize="@dimen/x32" />
+
+        <TextView
+            android:id="@+id/tv_more_go_yy_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/wd_jr"
+            />
+    </RelativeLayout>
+
+    <com.aliamauri.meat.view.MyGridView
+        android:id="@+id/gv_yy_page_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:horizontalSpacing="@dimen/y32"
+        android:numColumns="5"
+        android:paddingLeft="@dimen/x20"
+        android:paddingBottom="@dimen/y15"
+        android:paddingRight="@dimen/x20"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/y20" >
+    </com.aliamauri.meat.view.MyGridView>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:layout_marginBottom="@dimen/y20" />
+</LinearLayout>

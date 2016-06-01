@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical"
+    tools:context=".PhonePicActivity" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_nickname_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_marginTop="@dimen/y30" >
+
+        <EditText
+            android:id="@+id/et_nickname_name"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y100"
+            android:background="#ffffff"
+            android:cursorVisible="true"
+            android:maxLength="12"
+            android:paddingLeft="@dimen/x20"
+            android:textColor="@color/word_black"
+            android:textCursorDrawable="@null" />
+
+        <ImageButton
+            android:id="@+id/ib_nickname_delete"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/y50"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:background="@null"
+            android:src="@drawable/x" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y30"
+        android:gravity="center"
+        android:text="使用真实的姓名，让人更快的找到你"
+        android:textColor="@color/word_greyblack" />
+
+</LinearLayout>

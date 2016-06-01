@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myswitch="http://com/aliamauri/meat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y58"
+        android:layout_marginLeft="@dimen/x20"
+        android:gravity="center_vertical"
+        android:text="新消息提醒"
+        android:textColor="@color/word_greyblack"
+        android:textSize="@dimen/x28" />
+
+    <RelativeLayout
+        android:id="@+id/rl_myspace_mydynamic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:background="@color/bg_white"
+        android:paddingRight="@dimen/x20" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center"
+            android:text="接收新消息提醒"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <com.aliamauri.meat.view.MySwitch
+            android:id="@+id/ms_sm_getmessage"
+            android:layout_width="@dimen/x138"
+            android:layout_height="@dimen/y46"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            myswitch:msType="rectangle" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_sm_showmessage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:background="@color/bg_white"
+        android:paddingRight="@dimen/x20" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center"
+            android:text="提醒时显示消息内容"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <com.aliamauri.meat.view.MySwitch
+            android:id="@+id/ms_sm_showmessage"
+            android:layout_width="@dimen/x138"
+            android:layout_height="@dimen/y46"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            myswitch:msType="rectangle" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:background="@color/bg_white"
+        android:paddingRight="@dimen/x20" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center"
+            android:text="声音"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <com.aliamauri.meat.view.MySwitch
+            android:id="@+id/ms_sm_voice"
+            android:layout_width="@dimen/x138"
+            android:layout_height="@dimen/y46"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            myswitch:msType="rectangle" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:background="@color/bg_white"
+        android:paddingRight="@dimen/x20" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center"
+            android:text="振动"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <com.aliamauri.meat.view.MySwitch
+            android:id="@+id/ms_sm_vibrate"
+            android:layout_width="@dimen/x138"
+            android:layout_height="@dimen/y46"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            myswitch:msType="rectangle" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y58"
+        android:layout_marginLeft="@dimen/x20"
+        android:gravity="center_vertical"
+        android:text="免打扰设置"
+        android:textColor="@color/word_greyblack"
+        android:textSize="@dimen/x28" />
+
+    <View style="@style/horizontal_line_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y156"
+        android:background="@color/bg_white"
+        android:paddingRight="@dimen/x20" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="夜间免打扰"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开启夜间免打扰后系统在晚上10点到"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x28" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="早晨9点之间推送不发出声音和震动"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x28" />
+        </LinearLayout>
+
+        <com.aliamauri.meat.view.MySwitch
+            android:id="@+id/ms_sm_nightmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+</LinearLayout>

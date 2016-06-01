@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aliamauri.meat"
+    android:versionCode="21"
+    android:versionName="0.3" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 环信权限 -->
+    <permission
+        android:name="com.easemob.chatuidemo.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" >
+    </uses-permission>
+    <!-- ###################声明SDK使用的相关权限###################### -->
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name=".global.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launch"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.DialogWhenLarge.NoActionBar" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.PopupwindowEditMemberActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name=".activity.SelectPicPopupWindow"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name=".activity.SelectPlandWindow"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name=".activity.SelectGenderWindow"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name=".activity.TelsFriendActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.NewFriendActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.search_activity.RecommendDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".activity.search_activity.RecommendMenuDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".top.ChannelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name=".activity.AttentionActivity" >
+        </activity>
+        <activity android:name=".activity.WebViewActivity" >
+        </activity>
+        <activity
+            android:name=".activity.MyMoviesActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".activity.FriendDataActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.search_activity.RecordDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.nearby_activity.BroadCast_DT"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.nearby_activity.BroadCast_YS"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.GuideActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.nearby_activity.ResourceSearch_page"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.DatingInvitationActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.find_activity.Hfpy_activity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.nearby_activity.Details_DT"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".activity.nearby_activity.SelectChannelTag"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".play.PlayCommentActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.nearby_activity.ShowDetailsImages"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity android:name=".activity.RetrievePasswordActivity" >
+        </activity>
+        <activity
+            android:name=".activity.find_activity.YjzqActivity"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity android:name=".activity.AddTalkMemberActivity" >
+        </activity>
+        <activity android:name=".activity.AccountBindActivity" >
+        </activity>
+        <activity android:name=".activity.SettingActivity" >
+        </activity>
+        <activity android:name=".activity.HobbyActivity" >
+        </activity>
+        <activity android:name=".activity.SettingMessageActivity" >
+        </activity>
+        <activity android:name=".activity.ModifyPasswordActivity" >
+        </activity>
+        <activity android:name=".activity.BlackListActivity" >
+        </activity>
+        <activity android:name=".activity.VipCenterActivity" >
+        </activity>
+        <activity android:name=".activity.AuthenticateSuccessActivity" >
+        </activity>
+        <activity android:name=".activity.AuthenticateActivity" >
+        </activity>
+        <activity
+            android:name=".activity.MyDynamicActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.UploadPhonePicActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name=".activity.PhonePicActivity" >
+        </activity>
+        <activity
+            android:name=".activity.ShowImageActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name=".activity.MyAlbumActivity" >
+        </activity>
+        <activity android:name=".activity.DelTalkMemberActivity" >
+        </activity>
+        <activity android:name=".activity.TalkListSelectActivity" >
+        </activity>
+        <activity android:name=".activity.TalkDataJoinActivity" >
+        </activity>
+        <activity android:name=".activity.TalkDataCreateActivity" >
+        </activity>
+        <activity android:name=".activity.TalkActivity" >
+        </activity>
+        <activity android:name=".activity.TalkListActivity" >
+        </activity>
+        <activity
+            android:name=".activity.find_activity.SpyhActivity"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name=".activity.PopupwindowConditionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" >
+        </activity>
+        <activity android:name=".activity.FriendActivity" >
+        </activity>
+        <activity
+            android:name=".activity.ShowShortVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.JobActivity" >
+        </activity>
+        <activity android:name=".activity.SignSytleActivity" >
+        </activity>
+        <activity android:name=".activity.EditDataActivity" >
+        </activity>
+        <activity android:name=".activity.BirthdayActivity" >
+        </activity>
+        <activity android:name=".activity.search_activity.SearchResultPageActivity" >
+        </activity>
+        <activity android:name=".activity.search_activity.SelectPlayNumActivity" >
+        </activity>
+        <activity android:name=".activity.NickNameActivity" >
+        </activity>
+        <activity android:name=".activity.AuthenticateActivit" >
+        </activity>
+        <activity android:name=".activity.MyDataActivity" >
+        </activity>
+        <activity android:name=".activity.TestActivity" >
+        </activity>
+        <activity android:name=".activity.TalkMemberActivity" >
+        </activity>
+        <activity android:name=".activity.SelectConditionActivity" >
+        </activity>
+        <activity
+            android:name=".activity.SelectUserActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Holo.DialogWhenLarge.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".activity."
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.nearby_activity.Retrans_DT"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.find_activity.GgxqActivity"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.find_activity.HdActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".activity.UploadPhoneVideoActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.DoyenDetailActvity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.FriendVideoDetailActvity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.OtherDataActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.find_activity.NmqzActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.find_activity.TjyyActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".activity.find_activity.HljyActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name=".activity.nearby_activity.CreateNew_HT"
+            android:launchMode="singleTask"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <!-- 自定义的contextmenu -->
+        <activity
+            android:name=".activity.IM.activity.ContextMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.LoginOrRegisterActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- play -->
+        <activity
+            android:name=".activity.search_activity.AlertDialogActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.search_activity.PlayCacheAcivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".play.PlaySourceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PageIndicatorDefaults" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="limao.playourceactivity"
+                    android:scheme="limaoso" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SplashActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SpecialItemActivity" >
+        </activity>
+        <activity android:name=".activity.SpecialActivity" >
+        </activity>
+        <activity android:name=".activity.TakeVideoActivity" >
+        </activity>
+        <activity android:name=".activity.LocalVideoActivity" >
+        </activity>
+
+        <!-- 环信开始 -->
+        <activity
+            android:name=".activity.IM.activity.ChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.BaseActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.CallActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.EditActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.ExitGroupDialog"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.ForwardMessageActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.GroupBlacklistActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.GroupDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.GroupPickContactsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.AlertDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.ImageGridActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.PickContactNoCheckboxActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.RecorderVideoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.ShowBigImage"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.ShowNormalFileActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.ShowVideoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.UserProfileActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.APPDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.VideoCallActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.LoginActivity_1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.BaiduMapActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.VoiceCallActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.GroupsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.GroupSimpleDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.NewGroupActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.PublicGroupsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.PublicGroupsSeachActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.search_activity.CollectDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.AddContactActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.IM.activity.NewFriendsMsgActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 分享 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID -->
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <!-- 分享 -->
+
+
+        <!-- 播放器 -->
+
+        <activity
+            android:name=".play.PlayActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:hardwareAccelerated="false"
+            android:theme="@style/Theme.PageIndicatorDefaults"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!--
+                     <data
+                    android:host="limao.playactivity"
+                    android:scheme="limaoso" />
+                -->
+            </intent-filter>
+        </activity>
+        <!-- gcm start -->
+        <receiver
+            android:name="com.easemob.chat.EMGCMBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.easemob.chatuidemo" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.easemob.chat.EMGCMListenerService"
+            android:exported="false" >
+        </service>
+        <!-- P2P -->
+        <service
+            android:name="com.limaoso.phonevideo.service.P2pService"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name=".service.UploadService"
+            android:exported="false" >
+        </service>
+         <service
+            android:name=".app.APPService"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name="com.easemob.chatuidemo.receiver.GCMPushBroadCast"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.easemob.sdk.push" />
+
+                <category android:name="com.easemob.chatuidemo" />
+            </intent-filter>
+        </receiver>
+        <!-- gcm end -->
+        <!-- aliamiao#limao 设置环信应用的appkey hongliu2015#jiaoyoutest -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="aliamiao#limao" />
+        <!-- 声明sdk所需的service -->
+        <service android:name="com.easemob.chat.EMChatService" />
+        <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.easemob.chat.EMMonitorReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <!-- 环信结束 -->
+        <!-- 百度地图所需的service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <!-- umeng appkey开始 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56f4cf0d67e58e03950003f9" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="2000" />
+        <!-- umeng appkey结束 -->
+        <!-- 百度地图结束 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="b7hxWNid0Rv143CCC6BWyfTvxtcsNQgI" />
+        <!-- 百度地图结束 -->
+    </application>
+
+</manifest>

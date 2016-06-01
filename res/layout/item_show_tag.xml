@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x20"
+        android:layout_marginBottom="@dimen/y20"
+        android:background="@color/bg_white" 
+        android:paddingRight="@dimen/x20"
+        android:paddingTop="@dimen/y20" 
+        android:paddingBottom="@dimen/y20" 
+        >
+
+        <FrameLayout
+            android:id="@+id/id_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <TextView
+                android:id="@+id/tv_hite_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/tag_hite_text"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x32" />
+
+            <com.aliamauri.meat.view.FlowLayout
+                android:id="@+id/fl_show_tag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:visibility="gone" >
+            </com.aliamauri.meat.view.FlowLayout>
+
+            <ImageView
+                android:id="@+id/iv_add_tag_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/tag_add_icon" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

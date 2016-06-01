@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/x20"
+    android:paddingRight="@dimen/x20"
+    android:background="@color/bg_white"
+     >
+ <View style="@style/horizontal_line_style" 
+     android:id="@+id/line_details_dt"
+     android:layout_alignParentTop="true"
+     android:layout_marginBottom="@dimen/y10"
+     />
+  <com.aliamauri.meat.view.TextViewSpanClickable.CommentTextView
+        android:id="@+id/tv_comment_reply"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/y2"
+        android:layout_height="wrap_content"
+        android:textColor="@color/word_black"
+        android:textSize="@dimen/x26"
+        android:layout_below="@id/line_details_dt"
+        />
+
+</RelativeLayout>

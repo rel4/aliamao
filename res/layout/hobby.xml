@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x20"
+        android:text="先从你兴趣爱好开始，让别人更加了了解你"
+        android:textColor="@color/word_black"
+        android:textSize="@dimen/x28" />
+
+    <com.aliamauri.meat.view.FlowLayout
+        android:id="@+id/fl_hobby_choice"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/y240"
+        android:background="@color/bg_white"
+        android:paddingLeft="@dimen/x20"
+        android:paddingTop="@dimen/y22" >
+    </com.aliamauri.meat.view.FlowLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/y54"
+            android:gravity="center_vertical"
+            android:text="通过点击一下进行选择:"
+            android:textColor="@color/word_greyblack"
+            android:textSize="@dimen/x28" />
+
+        <TextView
+            android:id="@+id/tv_hobby_moretags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/y54"
+            android:gravity="center_vertical"
+            android:text="换一下"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/x28" />
+    </LinearLayout>
+
+    <com.aliamauri.meat.view.FlowLayout
+        android:id="@+id/fl_hobby_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:paddingTop="@dimen/y22" >
+    </com.aliamauri.meat.view.FlowLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/y120"
+        android:gravity="center_vertical"
+        android:text="在下面输入并添加新标签"
+        android:textColor="@color/word_greyblack"
+        android:textSize="@dimen/x28" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y68"
+        android:layout_marginTop="@dimen/y30" >
+
+        <EditText
+            android:id="@+id/et_hobby_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toLeftOf="@+id/tv_hobby_addlabel"
+            android:background="@drawable/hobby_shape_greyborder"
+            android:paddingLeft="@dimen/x20"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x36" />
+
+        <TextView
+            android:id="@+id/tv_hobby_addlabel"
+            android:layout_width="@dimen/x180"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:background="@drawable/hobby_shape_orangeborder"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/x32" />
+    </RelativeLayout>
+
+</LinearLayout>

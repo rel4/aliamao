@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <include layout="@layout/title" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/ptr_tpl_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_blackgrey" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

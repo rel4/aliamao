@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:gravity="center"
+        android:text="不限"
+        android:textColor="@color/word_black"
+        android:textSize="@dimen/x36" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:gravity="center"
+        android:text="男"
+        android:textColor="@color/word_black"
+        android:textSize="@dimen/x36" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:gravity="center"
+        android:text="女"
+        android:textColor="@color/word_black"
+        android:textSize="@dimen/x36" />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20" >
+
+        <TextView
+            android:id="@+id/tv_jobitem_icon"
+            android:layout_width="@dimen/x58"
+            android:layout_height="@dimen/y30"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="dkdk"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/x22" />
+
+        <TextView
+            android:id="@+id/tv_jobitem_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/tv_jobitem_icon"
+            android:gravity="center"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <ImageView
+            android:id="@+id/iv_jobitem_check"
+            android:layout_width="@dimen/x32"
+            android:layout_height="@dimen/y24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/job_check"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+</LinearLayout>

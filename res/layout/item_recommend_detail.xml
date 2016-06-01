@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/detail_main_tital_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp10"
+            android:background="@color/bg_gray" />
+
+        <TextView
+            android:id="@+id/tv_main_detail_catname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp15"
+            android:background="@color/bg_green"
+            android:padding="@dimen/dp3"
+            android:text="@string/str_load"
+            android:textColor="@color/bg_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_main_detail_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp15"
+            android:padding="@dimen/dp3"
+            android:text="@string/str_load"
+            android:textColor="@color/bg_text_gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp15" >
+
+        <TextView
+            android:id="@+id/tv_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:text="@string/str_load"
+            android:textColor="@color/bg_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_detail_reader_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/str_load"
+            android:textColor="@color/bg_text_gray"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp190"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp10" >
+
+        <ImageView
+            android:id="@+id/iv_tv_iocn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_detail_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/recommend_play_iocn"
+            android:text="@string/str_load"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:layout_marginTop="@dimen/dp15" />
+
+</LinearLayout>

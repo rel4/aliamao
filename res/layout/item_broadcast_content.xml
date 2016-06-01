@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x20"
+        android:background="@color/bg_white"
+        android:paddingBottom="@dimen/y20"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:paddingTop="@dimen/y15" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="图片/视频"
+            android:textColor="@color/title_word_black"
+            android:textSize="@dimen/x32" />
+
+        <TextView
+            android:id="@+id/title_hite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="@dimen/x8"
+            android:paddingRight="@dimen/x20"
+            android:text="拍出这一刻的精彩"
+            android:textColor="@color/word_greyblack"
+            android:textSize="@dimen/x32"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_add_phone_video"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y226"
+            android:layout_below="@id/title_hite"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@drawable/bg_broadcast_content"
+            android:gravity="center"
+            android:text="@string/text_video_phone"
+            android:textColor="@color/bg_text_grey"
+            android:textSize="@dimen/x28"
+            android:visibility="visible" />
+
+        <com.aliamauri.meat.view.MyGridView
+            android:id="@+id/gv_add_album_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="@dimen/x10"
+            android:cacheColorHint="#00000000"
+            android:horizontalSpacing="@dimen/x20"
+            android:listSelector="#00000000"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/y30"
+            android:visibility="visible" >
+        </com.aliamauri.meat.view.MyGridView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gv_add_album_list"
+            android:layout_marginTop="@dimen/x20" >
+
+            <ImageView
+                android:id="@+id/iv_video_add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="@dimen/x50"
+                android:src="@drawable/video_btn"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+                <ImageView
+                    android:id="@+id/iv_video_img"
+                    android:layout_width="@dimen/x310"
+                    android:layout_height="@dimen/y200"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:id="@+id/iv_video_del_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/iv_video_img"
+                    android:src="@drawable/album_del_icon" />
+
+                <ImageView
+                    android:id="@+id/iv_video_play_btn"
+                    android:layout_width="@dimen/x70"
+                    android:layout_height="@dimen/x70"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_play" />
+            </RelativeLayout>
+            
+            
+            <ImageView
+                android:id="@+id/iv_add_photo_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/photo_btn"
+                android:layout_toRightOf="@id/rl_video"
+              	android:layout_centerVertical="true"
+              	android:visibility="gone" 
+                android:layout_marginLeft="@dimen/x30"
+                 />
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

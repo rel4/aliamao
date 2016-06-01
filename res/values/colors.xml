@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="common_bg">#fffcf8</color>
+    <color name="divider_list">#cccccc</color>
+    <color name="voip_interface_text_color">#666667</color>
+    <!-- 环信的标头的颜色 -->
+    <color name="top_bar_normal_bg">#8d51d8</color>
+    <color name="gray_normal">#666667</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="gray_pressed">#000000</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="btn_green_noraml">#68C270</color>
+    <color name="btn_green_pressed">#6FCD78</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="bg_shallow_green">#8801c675</color>
+    <color name="orange">#FFA500</color>
+    <color name="bg_green">#01c675</color>
+    <!-- 添加按钮的背景颜色 -->
+    <color name="bg_for_add">#2ea8ed</color>
+    <!-- 透明色 -->
+    <color name="bg_transparent">#00000000</color>
+    <!-- 半透明 -->
+    <color name="bg_half_transparent">#88000000</color>
+    <!-- 背景色 -->
+    <color name="bg_color">#f1f1f1</color>
+    <!-- 灰色字体 -->
+    <color name="bg_text_gray">#999999</color>
+    <!-- 淡灰色 -->
+    <color name="bg_light_gray">#F5F5F5</color>
+    <!-- 灰色 -->
+    <color name="bg_gray">#C0C0C0</color>
+    <!-- 灰色线条在上网必备里的线条 -->
+    <color name="app_line_network">#ededed</color>
+    <!-- 黑色 -->
+    <color name="bg_black">#000000</color>
+    <!-- 白色 -->
+    <color name="bg_white">#ffffff</color>
+    <!-- 深黑色 -->
+    <color name="bg_dark_black">#464545</color>
+    <!-- 评论字体 -->
+    <color name="bg_user_name_text">#506ea0</color>
+    <!-- 布局描边线颜色 -->
+    <color name="app_line">#dddddd</color>
+    <color name="app_line_gre">#f2f2f2</color>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_base_hljy_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/x30"
+            android:text="@string/hljy_bottom_title_name"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <View style="@style/horizontal_line_style" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120" >
+
+            <ImageView
+                android:id="@+id/iv_btn_base_hljy_swap"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30"
+                android:src="@drawable/wd_jr" />
+
+            <GridView
+                android:id="@+id/gv_base_hljy_usericon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_toLeftOf="@id/iv_btn_base_hljy_swap"
+                android:cacheColorHint="#00000000"
+                android:listSelector="#00000000"
+                android:numColumns="5"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/x30" >
+            </GridView>
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/btn_base_hljy_spyh"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hljy_right_spyh"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x38" />
+
+            <View
+                style="@style/vertical_line_style"
+                android:layout_marginBottom="@dimen/y15"
+                android:layout_marginTop="@dimen/y15" />
+
+            <TextView
+                android:id="@+id/btn_base_hljy_yjzq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hljy_left_yjzq"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x38" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_base_hljy_replaty_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_base_hljy_bottom_layout"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg_greywhite" >
+    </FrameLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:layout_below="@id/fl_base_hljy_replaty_content" />
+
+</RelativeLayout>

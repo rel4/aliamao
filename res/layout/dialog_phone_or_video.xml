@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog"
+     >
+     <TextView
+         	android:id="@+id/tv_dialog_broadcast_camear"
+         	style="@style/dialog_phone_or_video_style"
+            android:text="拍照"
+            />
+      <View style="@style/horizontal_line_style"/>
+     <TextView
+         	android:id="@+id/tv_dialog_broadcast_album"
+         	style="@style/dialog_phone_or_video_style"
+         	android:text="相册"
+            
+            />
+        <View style="@style/horizontal_line_style"/>
+     <TextView
+         	android:id="@+id/tv_dialog_broadcast_cancel"
+         	style="@style/dialog_phone_or_video_style"
+         	android:text="取消"
+            
+            />
+    
+
+</LinearLayout>

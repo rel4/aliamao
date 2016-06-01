@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y114"
+        android:background="@color/bg_white" >
+
+        <TextView
+            android:id="@+id/tv_selectuser_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/v_selecuser_vertical"
+            android:drawableTop="@drawable/select_search_condition"
+            android:gravity="center"
+            android:text="条件搜索"
+            android:textColor="@color/word_black" >
+        </TextView>
+
+        <View
+            android:id="@+id/v_selecuser_vertical"
+            style="@style/vertical_line_style"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tv_selectuser_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/v_selecuser_vertical"
+            android:drawableTop="@drawable/select_topic_icon"
+            android:gravity="center"
+            android:text="话题"
+            android:textColor="@color/word_black" >
+        </TextView>
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_su_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y68"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/bg_white"
+        android:visibility="gone" >
+
+        <View style="@style/horizontal_line_style" />
+
+        <TextView
+            android:id="@+id/tv_su_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y68"
+            android:layout_marginLeft="@dimen/x30"
+            android:gravity="center_vertical"
+            android:text="通讯录好友"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x28" />
+
+        <View
+            style="@style/horizontal_line_style"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <com.aliamauri.meat.view.RefreshListView
+        android:id="@+id/rlv_selectuser_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_greywhite"
+        android:divider="@null" >
+    </com.aliamauri.meat.view.RefreshListView>
+
+</LinearLayout>

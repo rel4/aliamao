@@ -1,0 +1,385 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="subscribe_more_tip_text" parent="@style/subscribe_my_tip_text">
+        <item name="android:textSize">13.0sp</item>
+    </style>
+
+    <style name="subscribe_seperate_line">
+        <item name="android:background">@color/subscribe_seperate_line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+        <item name="android:layout_marginTop">14.0dip</item>
+        <item name="android:layout_marginBottom">14.0dip</item>
+    </style>
+
+    <style name="subscribe_my_tip_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/subscribe_tip_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="top_category_scroll_view_item_text">
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:textColor">@color/word_black</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="myratingbar" parent="@android:style/Widget.Holo.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/myratingbar</item>
+        <item name="android:minHeight">@dimen/dp13.5</item>
+        <item name="android:maxHeight">@dimen/dp13.5</item>
+    </style>
+
+    <!-- progress_horizontal -->
+    <style name="mProgress_horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_horizontal_1</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+    <!-- 低栏RadioButton的样式 -->
+    <style name="BottomTabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">1dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">@drawable/text_left_menu_selector</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 动态详情页中的照片，视频dialog对话框 -->
+    <style name="dialog_phone_or_video_style">
+        <item name="android:layout_height">@dimen/y98</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/x38</item>
+        <item name="android:textColor">@color/word_black</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 匿名动态详情中的dialog对话框 -->
+    <style name="niming_dt_text_style">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/x38</item>
+        <item name="android:textColor">@color/word_black</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 动态展示条目中图片摆放的样式u -->
+    <style name="my_dynamic_icon_style">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="MyProgressBar" parent="@android:style/Widget.ProgressBar">
+        <item name="android:minWidth">5dip</item>
+        <item name="android:maxWidth">5dip</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">5dip</item>
+    </style>
+    <!-- retrans布局中聊天输入按钮的样式 -->
+    <style name="retrans_import_text_style">
+        <item name="android:layout_width">@dimen/x75</item>
+        <item name="android:layout_height">@dimen/y75</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_tv_retrans</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/word_black</item>
+    </style>
+    <!-- dialog弹窗按钮的样式 -->
+    <style name="dialog_btn_text_style">
+        <item name="android:layout_width">@dimen/x180</item>
+        <item name="android:layout_height">@dimen/y80</item>
+        <item name="android:textSize">@dimen/x42</item>
+    </style>
+    <!-- 动态条目popup弹窗上3个按钮的样式 -->
+    <style name="popup_btn_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/bg_white</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:drawablePadding">@dimen/x10</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 发现页面上4个按钮的样式 -->
+    <style name="find_button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/title_word_black</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/x20</item>
+    </style>
+    <!-- 发现页面上4个跟布局样式的样式 -->
+    <style name="find_rl_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y108</item>
+        <item name="android:paddingLeft">@dimen/x20</item>
+        <item name="android:paddingRight">@dimen/x20</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@color/bg_white</item>
+    </style>
+
+    <!-- 发现页面上4个按钮的样式  右侧进入标记 -->
+    <style name="find_go_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:src">@drawable/wd_jr</item>
+    </style>
+    <!-- 首页底部标题标签的标题样式   附近 通讯录 搜索 发现 我的 -->
+    <style name="home_bot_title_theme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/y10</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 首页底部标题标签的标题 图片 样式 -->
+    <style name="home_bot_title_theme_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 首页底部标题标签的标题 文字 样式 -->
+    <style name="home_bot_title_theme_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:layout_marginBottom">@dimen/y10</item>
+        <item name="android:layout_marginTop">@dimen/y10</item>
+    </style>
+
+    <!-- 顶部fragment标题标签的标题 文字 样式 -->
+    <style name="fragment_top_title_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:textColor">@color/bg_white</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- 顶部fragment三级标题标签的标题 文字 样式 -->
+    <style name="fragment_child_top_title_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- 横向分割线的样式 -->
+    <style name="horizontal_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y1</item>
+        <item name="android:background">@color/bg_app_line</item>
+    </style>
+    <!-- 纵向分割线的样式 -->
+    <style name="vertical_line_style">
+        <item name="android:layout_width">@dimen/x1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/bg_app_line</item>
+    </style>
+    <!-- 从底部弹出菜单 -->
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    <!-- 变大 -->
+
+    <style name="AnimToShow" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/login_logo_anim</item>
+    </style>
+
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="MyDialog" parent="android:Theme.Dialog">
+        <item name="android:layout_width">@dimen/x630</item>
+        <item name="android:layout_height">@dimen/y840</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+    <!-- 环信开始 -->
+    <style name="chat_text_date_style">
+        <item name="android:padding">2dp</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:textColor">@color/btn_gray_normal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/timestampe_bg</item>
+    </style>
+
+    <style name="devide_line_eee">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1.5dp</item>
+        <item name="android:background">#eee</item>
+    </style>
+
+    <style name="chat_text_name_style">
+        <item name="android:textColor">#818181</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="chat_content_date_style">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+    <!-- 聊天 -->
+    <style name="horizontal_slide" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimFade2</item>
+    </style>
+
+    <style name="AnimFade2" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_to_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_to_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_from_left</item>
+    </style>
+
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!-- 环信结束 -->
+    <!-- 输入框样式 -->
+    <style name="eidtText">
+        <item name="android:textColor">@color/word_black</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:paddingLeft">@dimen/x20</item>
+    </style>
+    <!-- textview样式 -->
+    <style name="textview30">
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textview28">
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 进度条 -->
+    <style name="app_ProgressBar_Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/app_progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">5dip</item>
+    </style>
+    <!-- 横向分割线的样式 -->
+    <style name="horizontal_partition_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y1</item>
+        <item name="android:background">@color/app_line_network</item>
+    </style>
+    <!-- 纵向分割线的样式 -->
+    <style name="vertical_partition_line_style">
+        <item name="android:layout_width">@dimen/x1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/app_line_network</item>
+    </style>
+    <!-- 从底部弹出菜单 -->
+    <style name="AnimCommentList" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+    </style>
+    <!-- 注册登录页面textview edittext样式 开始 -->
+    <style name="reg_log_textview">
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/bg_white</item>
+    </style>
+    <!-- 注册登录页面textview edittext样式结束 -->
+
+
+    <!-- 自定义标题样式 -->
+    <style name="StatusBarBackground">
+        <item name="android:background">@color/bg_grey</item>
+    </style>
+
+    <!-- 我的页面上4个按钮的样式 记录缓存收藏上传 -->
+    <style name="my_space_button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/dp2</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 我的页面上4个按钮的样式  右侧进入标记 -->
+    <style name="my_space_go_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:src">@drawable/wd_jr</item>
+    </style>
+
+</resources>

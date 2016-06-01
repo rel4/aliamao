@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/y30"
+    android:background="@color/bg_white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <View style="@style/horizontal_line_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y30" >
+
+        <ImageView
+            android:id="@+id/iv_tv_icon"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y250"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/y30"
+            android:background="@drawable/default_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y266"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_toRightOf="@+id/iv_tv_icon"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:enabled="true"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/loading"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x28" />
+
+            <RelativeLayout
+                android:id="@+id/tv_up_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3" >
+
+                <TextView
+                    android:id="@+id/tv_up_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_text_red_oval"
+                    android:paddingBottom="@dimen/y2"
+                    android:paddingLeft="@dimen/x6"
+                    android:paddingRight="@dimen/x6"
+                    android:paddingTop="@dimen/y2"
+                    android:text="@string/text_updata"
+                    android:textColor="@color/bg_white"
+                    android:textSize="@dimen/x24" />
+
+                <TextView
+                    android:id="@+id/tv_up_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_up_"
+                    android:paddingLeft="@dimen/x6"
+                    android:paddingRight="@dimen/x8"
+                    android:text="@string/text_up_num"
+                    android:textColor="@color/bg_red"
+                    android:textSize="@dimen/x28" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_tv_direct"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/text_tv_direct"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x24" />
+
+            <TextView
+                android:id="@+id/tv_tv_lead_role"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/text_tv_lead_role"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x24" />
+
+            <TextView
+                android:id="@+id/tvt_tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/text_tv_type"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x24" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4" >
+
+                <TextView
+                    android:id="@+id/tv_bt_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_text_yellow_oval"
+                    android:drawableLeft="@drawable/plat_smell_iocm"
+                    android:drawablePadding="@dimen/x4"
+                    android:paddingBottom="@dimen/y6"
+                    android:paddingLeft="@dimen/x10"
+                    android:paddingRight="@dimen/x10"
+                    android:paddingTop="@dimen/y6"
+                    android:text="@string/play_credits_now"
+                    android:textColor="@color/bg_white"
+                    android:textSize="@dimen/x28" />
+
+                <TextView
+                    android:id="@+id/tv_tv_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x30"
+                    android:drawablePadding="@dimen/x10"
+                    android:drawableRight="@drawable/pull_down"
+                    android:padding="@dimen/x8"
+                    android:text="@string/see_details"
+                    android:textColor="@color/word_greyblack"
+                    android:textSize="@dimen/x24" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <GridView
+        android:id="@+id/gv_tv_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:horizontalSpacing="@dimen/x2"
+        android:numColumns="8" >
+    </GridView>
+
+</LinearLayout>

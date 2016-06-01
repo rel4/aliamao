@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/prgv_dr_content"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg_white"
+        android:horizontalSpacing="@dimen/x20"
+        android:numColumns="2"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:paddingTop="@dimen/y20"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/y20"
+        ptr:ptrMode="both" >
+    </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+
+</FrameLayout>

@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mm_listitem"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y108"
+        android:background="@color/bg_white"
+        android:duplicateParentState="true" >
+
+        <com.aliamauri.meat.view.CircleImageView
+            android:id="@+id/civ_aaci_avatar"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/y70"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@drawable/default_avatar" />
+
+        <TextView
+            android:id="@+id/tv_aaci_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@id/civ_aaci_avatar"
+            android:text="名字"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+
+        <TextView
+            android:id="@+id/tv_aaci_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:background="@drawable/shape_border_for_add"
+            android:gravity="center"
+            android:onClick="addContact"
+            android:paddingBottom="@dimen/y5"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:paddingTop="@dimen/y5"
+            android:text="添加"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/x32" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/layout_title_ggxq"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/layout_title_ggxq"
+        android:background="@color/bg_greywhite" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/y98" >
+
+            <RelativeLayout
+                android:id="@+id/rl_ggxq_title_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:background="@color/bg_white" >
+
+                <com.aliamauri.meat.view.CircleImageView
+                    android:id="@+id/civ_ggxq_head_icon"
+                    android:layout_width="@dimen/x60"
+                    android:layout_height="@dimen/y60"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/y20"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginRight="@dimen/y20"
+                    android:layout_marginTop="@dimen/y20" />
+
+                <TextView
+                    android:id="@+id/tv_hljy_hot_affiche_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/civ_ggxq_head_icon"
+                    android:textColor="@color/title_word_black"
+                    android:textSize="@dimen/x32" />
+
+                <TextView
+                    android:id="@+id/tv_ggxq_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/x20"
+                    android:textColor="@color/time_word_black"
+                    android:textSize="@dimen/x28" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_content_ggxq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_ggxq_title_1"
+                android:layout_marginTop="@dimen/x1"
+                android:background="@color/bg_white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_add_friend_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/y20"
+                    android:textColor="@color/word_black"
+                    android:textSize="@dimen/x32" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y98" >
+
+                    <TextView
+                        android:id="@+id/tv_ggxq_hy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:gravity="center"
+                        android:textColor="@color/word_black"
+                        android:textSize="@dimen/x32" />
+
+                    <TextView
+                        android:id="@+id/tv_ggxq_add_friend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x30"
+                        android:background="@drawable/btn_bg_ggxq"
+                        android:paddingBottom="@dimen/y10"
+                        android:paddingLeft="@dimen/x6"
+                        android:paddingRight="@dimen/x6"
+                        android:paddingTop="@dimen/y10"
+                        android:text="@string/text_siliao_name"
+                        android:textColor="@color/main_color"
+                        android:textSize="@dimen/x28"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View style="@style/horizontal_line_style" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/ll_content_ggxq"
+                android:layout_marginTop="@dimen/y20" >
+
+                <com.aliamauri.meat.view.RefreshListView
+                    android:id="@+id/rlv_ggxq_show_friend_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#00000000"
+                    android:dividerHeight="0dp"
+                    android:listSelector="#00000000" >
+                </com.aliamauri.meat.view.RefreshListView>
+
+                <FrameLayout
+                    android:id="@+id/fl_loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_greywhite" >
+
+                    <ProgressBar
+                        android:id="@id/pb_loading"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:indeterminateDrawable="@drawable/custom_progress"
+                        android:indeterminateDuration="700" />
+                </FrameLayout>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_message_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y98"
+            android:layout_gravity="bottom"
+            android:background="#F6F6F6"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="@dimen/y15"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:paddingTop="@dimen/y15" >
+
+            <TextView
+                android:id="@+id/tv_btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x20"
+                android:text="@string/find_hljy_ggxq_btn_fb"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+
+            <View
+                style="@style/vertical_line_style"
+                android:layout_marginBottom="@dimen/y15"
+                android:layout_marginTop="@dimen/y15"
+                android:layout_toLeftOf="@id/tv_btn_ok" />
+
+            <EditText
+                android:id="@+id/et_message_import"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/x15"
+                android:layout_toLeftOf="@id/tv_btn_ok"
+                android:background="@drawable/edit_bg_ggxq"
+                android:gravity="center_vertical|left"
+                android:hint="回应(最多30字)"
+                android:inputType="textMultiLine"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:id="@+id/pop_selectgender_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/btn_selectgender_male"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y98"
+            android:gravity="center"
+            android:text="男"
+            android:textColor="@color/word_black"
+            android:textStyle="bold" />
+
+        <View style="@style/horizontal_line_style" />
+
+        <TextView
+            android:id="@+id/btn_selectgender_female"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y98"
+            android:gravity="center"
+            android:text="女"
+            android:textColor="@color/word_black"
+            android:textStyle="bold" />
+
+        <View style="@style/horizontal_line_style" />
+
+        <TextView
+            android:id="@+id/btn_selectgender_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y98"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/word_black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

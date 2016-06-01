@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_tdc_headicon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y30" >
+
+        <com.aliamauri.meat.view.CircleImageView
+            android:id="@+id/ci_tdc_headicon"
+            android:layout_width="@dimen/x140"
+            android:layout_height="@dimen/y140"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/x30"
+           />
+
+        <TextView
+            android:layout_width="@dimen/x160"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ci_tdc_headicon"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y30"
+            android:gravity="center"
+            android:text="修改头像"
+            android:textColor="@color/word_lightblack"
+            android:textSize="@dimen/x36" />
+
+        <TextView
+            android:id="@+id/tv_tdc_headicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tdc_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_marginTop="@dimen/y30"
+        android:background="@color/bg_white" >
+
+        <TextView
+            android:id="@+id/tv_tdc_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x30"
+            android:gravity="center"
+            android:text="猪的世界你不懂"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x36" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:text="编辑"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x36" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:background="@color/bg_white" >
+
+        <GridView
+            android:id="@+id/gv_tdc_tags"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y68"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_toLeftOf="@+id/tv_tdc_edit1"
+            android:numColumns="3" >
+        </GridView>
+
+        <TextView
+            android:id="@+id/tv_tdc_edit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:text="编辑"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x36" />
+
+        <ImageView
+            android:id="@+id/iv_tdc_tags"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:background="@color/bg_white"
+        android:paddingBottom="@dimen/y20"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:paddingTop="@dimen/y20" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="群成员"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x36" />
+
+        <TextView
+            android:id="@+id/tv_tdc_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="58/1000"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x36" />
+
+        <ImageView
+            android:id="@+id/iv_tdc_talkmember1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:background="@color/bg_white"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30" >
+
+        <com.aliamauri.meat.view.HorizontalListView
+            android:id="@+id/hl_tdc_pic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:layout_toLeftOf="@+id/iv_talkdata_jiantou" />
+
+        <ImageView
+            android:id="@+id/iv_talkdata_jiantou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:src="@drawable/jiantou" />
+
+        <ImageView
+            android:id="@+id/iv_tdc_talkmember2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:background="@color/bg_white"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="消息界面打扰"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x36" />
+
+        <com.aliamauri.meat.view.MySwitch
+            android:id="@+id/ms_tdc_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <LinearLayout
+        android:id="@+id/ll_tdc_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/y30"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="话题简介"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x36" />
+
+        <TextView
+            android:id="@+id/tv_tdc_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    右转明码标价木奇怪进去土果然sd"
+            android:textColor="@color/word_greyblack"
+            android:textSize="@dimen/x28" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_talkdata_btn"
+        android:layout_width="@dimen/x260"
+        android:layout_height="@dimen/y100"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y50"
+        android:background="@drawable/shape_bgorange_border"
+        android:gravity="center"
+        android:text="解散话题"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/x42" />
+
+</LinearLayout>

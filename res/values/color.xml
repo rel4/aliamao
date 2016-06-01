@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 男性颜色 -->
+    <color name="male_color">#00b7ee</color>
+    <!-- 女性颜色 -->
+    <color name="female_color">#eb6877</color>
+    <!-- 注册字体 -->
+    <color name="register_word">#4c69e7</color>
+    <!-- 主颜色 -->
+    <color name="main_color">#8d51d8</color>
+    <!-- 标头颜色 -->
+    <color name="title_color">#443b49</color>
+    <!-- 底部颜色 -->
+    <color name="bottom_title_bg_color">#F7F7F7</color>
+    <!-- 注册登录蓝颜色 -->
+    <color name="rl_blue_color">#8883fb</color>
+    <!-- 注册登录亮蓝颜色 -->
+    <color name="rl_lignt_blue_color">#86a6f8</color>
+    <color name="blur_bg">#FFFAF0</color>
+    <color name="black">#000000</color>
+    <color name="grey">#808080</color>
+    <color name="right_bg">#696969</color>
+    <color name="orange">#FFA500</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="color1">#7b7b7b</color>
+    <color name="color2">#5a5a5a</color>
+
+    <!-- 纯白 -->
+    <color name="bg_white">#fff</color>
+    <!-- 背景红色 -->
+    <color name="bg_red">#f52120</color>
+    <!-- 背景淡红色 -->
+    <color name="bg_red_a">#FD6155</color>
+    <!-- 灰白 -->
+    <color name="bg_greywhite">#efefef</color>
+    <!--  -->
+    <color name="bg_blackgrey">#f4f5f5</color>
+    <!-- 灰 -->
+    <color name="bg_autheticate">#7c7c7c</color>
+    <!-- 灰 -->
+    <color name="bg_grey">#cbcbcb</color>
+    <!-- 字体蓝色 -->
+    <color name="word_blue">#30A8EC</color>
+    <!-- 分隔线 -->
+    <color name="bg_app_line">#d6d6d6</color>
+    <!-- 拍摄背景 -->
+    <color name="bg_app_video">#5d5d5d</color>
+    <!-- 透明度25% -->
+    <color name="bg_map_layout">#a0000000</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 标题栏下的分割线颜色 -->
+    <color name="bg_title_line">#e4493d</color>
+    <!-- 字体亮黑色 -->
+    <color name="word_lightblack">#323232</color>
+    <!-- 字体黑色 -->
+    <color name="word_black">#464545</color>
+    <!-- 名称字体黑色 -->
+    <color name="title_word_black">#0d0d0d</color>
+    <!-- 时间字体黑色 -->
+    <color name="time_word_black">#999999</color>
+    <!-- 字体灰黑色 -->
+    <color name="word_greyblack">#8e8e8e</color>
+    <!-- 黄色 -->
+    <color name="bg_yellow">#ffab00</color>
+    <!-- 深灰色字体 -->
+    <color name="bg_text_grey">#cccccc</color>
+    <!-- 环信 -->
+    <color name="bottom_text_color_normal">#ffffff</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+    <color name="btn_pressed_green_solid">#B6DA53</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="btn_register_pressed">#00acff</color>
+    <!-- 发布 转发 语音条目背景 -->
+    <color name="bg_voice">#d9ecff</color>
+    <!-- 发布 转发 语音条目背景边框线 -->
+    <color name="bg_voice_line">#cfe8ff</color>
+    <color name="line_fl_text">#bdbdbd</color>
+    <color name="bg_fl_text_content">#e8e8e8</color>
+    <color name="subscribe_activity_bg">#ffefefef</color>
+    <color name="subscribe_bg">#fff5f5f5</color>
+    <color name="subscribe_tip_text">#ff2e2e2e</color>
+    <color name="subscribe_seperate_line">#ffcdcdcd</color>
+    <color name="subscribe_item_selected_stroke">#ffcc3131</color>
+    <color name="subscribe_item_text_color_pressed">#ffb9b9b9</color>
+    <color name="default_text_night">#ff747474</color>
+    <color name="default_text">#ff454545</color>
+
+    <item name="subscribe_item_text_color_normal" type="color">@color/default_text</item>
+
+</resources>

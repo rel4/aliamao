@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_takevideo_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:paddingLeft="@dimen/x30" >
+
+        <ImageView
+            android:layout_width="@dimen/x23"
+            android:layout_height="@dimen/y44"
+            android:layout_centerVertical="true"
+            android:src="@drawable/title_back_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="发布视频"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/x32" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <VideoView
+            android:id="@+id/mVideoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparent"
+            android:gravity="center_horizontal"
+            android:textColor="#FFF"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:layout_above="@+id/pb_show_progress" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.7"
+                android:background="@color/word_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="对准有趣的画面,开始拍摄"
+                android:textColor="@color/bg_white"
+                android:textSize="@dimen/x32" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/recorder_play"
+            android:layout_width="@dimen/x115"
+            android:layout_height="@dimen/x115"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/video_recorder_play_btn"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pb_show_progress"
+            style="@style/app_ProgressBar_Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_above="@+id/btn_layout"
+            android:max="60" />
+
+        <RelativeLayout
+            android:id="@+id/btn_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y323"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.7"
+            android:background="@android:color/black" >
+
+            <TextView
+                android:id="@+id/recorder_start"
+                android:layout_width="@dimen/x172"
+                android:layout_height="@dimen/y172"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/takevideo_start_selectstyle"
+                android:gravity="center"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x42" />
+
+            <ImageView
+                android:id="@+id/iv_atakevideo_del"
+                android:layout_width="@dimen/x172"
+                android:layout_height="@dimen/y172"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:src="@drawable/icon_takevideo_del"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_atakevideo_uploadlocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:layout_width="@dimen/x98"
+                    android:layout_height="@dimen/y98"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_takevideo_uploadlocal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/y20"
+                    android:text="上传视频"
+                    android:textColor="@color/bg_white"
+                    android:textSize="@dimen/x32" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/recorder_send"
+                android:layout_width="@dimen/x172"
+                android:layout_height="@dimen/y172"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/icon_takevideo_nextstep"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

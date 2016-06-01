@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="@dimen/x660"
+        android:layout_height="@dimen/y320"
+        android:background="@drawable/bg_dialog"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/y30" >
+
+        <TextView
+            android:id="@+id/niming_jb"
+            style="@style/niming_dt_text_style"
+            android:text="@string/text_jubao_name"/>
+
+        <View style="@style/horizontal_line_style" />
+
+        <TextView
+            android:id="@+id/niming_sl"
+            style="@style/niming_dt_text_style"
+            android:text="@string/text_siliao_name" />
+
+        <View style="@style/horizontal_line_style" />
+
+        <TextView
+            android:id="@+id/niming_qx"
+            style="@style/niming_dt_text_style"
+            android:text="@string/text_dialog_btn_no" />
+
+    </LinearLayout>
+
+</RelativeLayout>

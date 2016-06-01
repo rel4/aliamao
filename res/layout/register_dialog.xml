@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_border_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/y30"
+        android:background="@color/bg_white"
+        android:text="提示"
+        android:textColor="@color/word_black"
+        android:textSize="@dimen/x42" />
+
+    <TextView
+        android:id="@+id/tv_rd_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x100"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@color/bg_white"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/word_greyblack"
+        android:textSize="@dimen/x36" />
+
+    <View
+        style="@style/horizontal_line_style"
+        android:layout_marginTop="@dimen/y40" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y108" >
+
+        <View
+            android:id="@+id/view_rd_view1"
+            style="@style/vertical_line_style"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/tv_rd_yes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/view_rd_view1"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/register_word"
+            android:textSize="@dimen/x36" />
+
+        <TextView
+            android:id="@+id/tv_rd_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/tv_rd_yes"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x36" />
+    </RelativeLayout>
+
+</LinearLayout>

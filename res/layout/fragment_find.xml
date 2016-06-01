@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_find_pager_hljy"
+        style="@style/find_rl_style"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/find_button_style"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginTop="@dimen/y10"
+            android:drawableLeft="@drawable/icon_formarry"
+            android:text="@string/name_hljy" />
+
+        <ImageView style="@style/find_go_icon" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_find_pager_nmqz"
+        style="@style/find_rl_style"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_find_pager_nmqz"
+            style="@style/find_button_style"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginTop="@dimen/y10"
+            android:drawableLeft="@drawable/icon_anonymous"
+            android:text="爪印" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/tv_find_pager_nmqz"
+            android:text="全世界的狸哥猫姐都在看啥干啥?"
+            android:textColor="@color/word_greyblack"
+            android:textSize="@dimen/x24" />
+
+        <ImageView style="@style/find_go_icon" />
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_find_special"
+        style="@style/find_rl_style"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_find_special"
+            style="@style/find_button_style"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginTop="@dimen/y10"
+            android:drawableLeft="@drawable/icon_find_special"
+            android:text="新热必看" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/tv_find_special"
+            android:text="全世界都在这里聚集"
+            android:textColor="@color/word_greyblack"
+            android:textSize="@dimen/x24" />
+
+        <ImageView style="@style/find_go_icon" />
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_find_weirdo"
+        style="@style/find_rl_style"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_find_weirdo"
+            style="@style/find_button_style"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginTop="@dimen/y10"
+            android:drawableLeft="@drawable/icon_find_weirdo"
+            android:text="奇葩视界" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/tv_find_weirdo"
+            android:text="引爆你的眼球"
+            android:textColor="@color/word_greyblack"
+            android:textSize="@dimen/x24" />
+
+        <ImageView style="@style/find_go_icon" />
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:visibility="gone" />
+
+    <View
+        style="@style/horizontal_line_style"
+        android:layout_marginTop="@dimen/y20"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_find_reward"
+        style="@style/find_rl_style"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_find_reward"
+            style="@style/find_button_style"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginTop="@dimen/y10"
+            android:drawableLeft="@drawable/icon_find_reward"
+            android:text="悬赏" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/tv_find_reward"
+            android:text="拼智慧,玩手段"
+            android:textColor="@color/word_greyblack"
+            android:textSize="@dimen/x24" />
+
+        <ImageView style="@style/find_go_icon" />
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_find_recruit"
+        style="@style/find_rl_style"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_find_recruit"
+            style="@style/find_button_style"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginTop="@dimen/y10"
+            android:drawableLeft="@drawable/icon_find_recruit"
+            android:text="招募" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/tv_find_recruit"
+            android:text="自媒体时代,找个合伙人,一起创业吧"
+            android:textColor="@color/word_greyblack"
+            android:textSize="@dimen/x24" />
+
+        <ImageView style="@style/find_go_icon" />
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_find_indiana"
+        style="@style/find_rl_style"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/find_button_style"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginTop="@dimen/y10"
+            android:drawableLeft="@drawable/icon_find_indiana"
+            android:text="一元夺宝" />
+
+        <ImageView style="@style/find_go_icon" />
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_find_redinvelope"
+        style="@style/find_rl_style"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/find_button_style"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginTop="@dimen/y10"
+            android:drawableLeft="@drawable/icon_find_redinvelope"
+            android:text="红包猜必得" />
+
+        <ImageView style="@style/find_go_icon" />
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_find_task"
+        style="@style/find_rl_style"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/find_button_style"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginTop="@dimen/y10"
+            android:drawableLeft="@drawable/icon_find_task"
+            android:text="点任务赚现金" />
+
+        <ImageView style="@style/find_go_icon" />
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_find_pager_recommend"
+        style="@style/find_rl_style"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/find_button_style"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginTop="@dimen/y10"
+            android:drawableLeft="@drawable/icon_activity"
+            android:text="必看推荐" />
+
+        <ImageView style="@style/find_go_icon" />
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_find_pager_hd"
+        style="@style/find_rl_style"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/find_button_style"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginTop="@dimen/y10"
+            android:drawableLeft="@drawable/icon_activity"
+            android:text="@string/name_hd" />
+
+        <ImageView style="@style/find_go_icon" />
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_find_pager_tjyy"
+        style="@style/find_rl_style"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/find_button_style"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginTop="@dimen/y10"
+            android:drawableLeft="@drawable/icon_recommendapp"
+            android:text="@string/name_tjyy" />
+
+        <ImageView style="@style/find_go_icon" />
+    </RelativeLayout>
+
+</LinearLayout>

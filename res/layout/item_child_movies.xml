@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_icm_content"
+    android:layout_width="@dimen/x130"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white" >
+
+    <TextView
+        android:id="@+id/tv_icm_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="df"
+        android:textColor="@drawable/color_main_greyblack_selectstyle"
+        android:textSize="@dimen/x32" >
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y3"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/drawable_color_main_white_selectstyle" />
+
+    <View
+        style="@style/vertical_line_style"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/y30"
+        android:layout_marginTop="@dimen/y30" >
+    </View>
+
+</RelativeLayout>

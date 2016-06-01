@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/title_color"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/commom_back_btn" />
+
+        <TextView
+            android:id="@+id/add_list_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_tab_bg"
+            android:onClick="searchContact"
+            android:text="@string/button_search"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_note"
+        style="@style/eidtText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:layout_marginBottom="@dimen/y20"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@drawable/bg_et_ht_search"
+        android:drawableLeft="@drawable/fdj"
+        android:hint="手机号码/UID/昵称"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x40"
+        android:singleLine="true"
+        android:textColor="@color/word_black"
+        android:textColorHint="@color/word_greyblack"
+        android:textSize="@dimen/x28" />
+
+    <EditText
+        android:id="@+id/edit_note2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:layout_margin="@dimen/x20"
+        android:background="@drawable/button_normal_shape"
+        android:hint="手机号码/UID"
+        android:paddingLeft="@dimen/x20"
+        android:singleLine="true"
+        android:textColorHint="#b3b3b3"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/ptr_adc_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

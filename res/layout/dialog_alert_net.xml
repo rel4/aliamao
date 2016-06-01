@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y160"
+        android:layout_marginTop="@dimen/y30"
+        android:gravity="center"
+        android:text="   你现在使用的是运营商网络，\n可能产生超额流量费用。"
+        android:textColor="@color/bg_black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        style="@style/horizontal_partition_line_style"
+        android:layout_marginTop="@dimen/y30" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100" >
+
+        <TextView
+            android:id="@+id/tv_dialog_continue"
+            android:layout_width="0dp "
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="继续观看"
+            android:textColor="@color/bg_black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View style="@style/vertical_partition_line_style" />
+
+        <TextView
+            android:id="@+id/tv_dialog_cancel"
+            android:layout_width="0dp "
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消观看"
+            android:textColor="@color/bg_green"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

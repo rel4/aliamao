@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <LinearLayout
+        android:id="@+id/umeng_update_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@drawable/umeng_update_dialog_bg"
+         >
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+            android:layout_height="@dimen/x68"
+	      android:layout_marginTop="@dimen/y30"
+	    >
+	    <ImageView 
+		     android:id="@+id/umeng_update_id_cancel"
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/x60"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/y45"
+                android:background="@drawable/update_button_cancel"
+		    />
+		<TextView 
+		    android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+		    android:text="发现新版本"
+		    android:textColor="@color/word_black"
+		    android:layout_alignParentLeft="true"
+		    android:textSize="@dimen/x32"
+		    android:gravity="center"
+		    />
+		
+		</RelativeLayout>
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginLeft="@dimen/x30"
+            
+             >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/umeng_update_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:textSize="@dimen/x26"
+                   
+                    android:textColor="#000" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/umeng_update_id_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x68"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/update_button_ok"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/x50"
+            android:layout_marginBottom="@dimen/y30"
+            android:paddingLeft="@dimen/y50"
+            android:paddingRight="@dimen/y50"
+            android:text="@string/UMUpdateNow"
+            android:textSize="@dimen/x32"
+            android:textColor="#1CA7FF" />
+    </LinearLayout>
+
+</RelativeLayout>

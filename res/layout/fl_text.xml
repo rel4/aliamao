@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/tv_tag_text_click"
+    android:layout_height="@dimen/y58"
+    android:background="@drawable/tv_bg"
+    android:gravity="center"
+    android:layout_marginRight="@dimen/x20"
+    android:layout_marginBottom="@dimen/y15"
+    android:paddingLeft="@dimen/x20"
+    android:paddingRight="@dimen/x20"
+    android:text="@string/loading"
+    android:textColor="@color/word_greyblack"
+    android:textSize="@dimen/x28" >
+
+</TextView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+     android:background="@color/bg_grey">
+
+    <LinearLayout
+        android:id="@+id/ll_retrans_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y226"
+        android:background="@color/bg_white" 
+         android:layout_marginBottom="@dimen/y20"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20" >
+
+        <ImageView
+            android:id="@+id/iv_video_retrans_icon"
+            android:layout_width="@dimen/x290"
+            android:layout_height="@dimen/y170"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@drawable/default_show_tv_iocn" />
+        <ImageView
+            android:id="@+id/iv_slbum_retrans_icon"
+            android:layout_width="@dimen/x170"
+            android:layout_height="@dimen/y170"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_show_tv_iocn" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y170"
+            android:layout_gravity="center_vertical"
+            android:background="@color/bg_greywhite"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x15"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/y15" >
+
+            <TextView
+                android:id="@+id/tv_item_retrans_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/loading"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+
+            <TextView
+                android:id="@+id/tv_item_retrans_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y5"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="@string/loading"
+                android:visibility="gone"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x28" />
+            <TextView
+                    android:id="@+id/tv_item_retrans_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_voice_shape"
+                    android:drawableLeft="@drawable/suona_right"
+                    android:paddingBottom="@dimen/y10"
+                    android:paddingLeft="@dimen/x20"
+                    android:drawablePadding="@dimen/x15"
+                    android:layout_marginTop="@dimen/y20"
+                    android:visibility="visible"
+                    android:singleLine="true"
+                    android:paddingRight="@dimen/x200"
+                    android:paddingTop="@dimen/y10" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    
+
+</FrameLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x72"
+        android:background="@color/bg_white"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <RadioButton
+            android:id="@+id/rb_dr_fj"
+            style="@style/fragment_child_top_title_text"
+            android:background="@null"
+            android:button="@null"
+            android:checked="true"
+            android:drawableBottom="@drawable/dr_title_text_bottom_line_selector"
+            android:text="@string/dr_fj"
+            android:textColor="@color/dr_title_text_color_selector" />
+
+        <View
+            style="@style/vertical_line_style"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginTop="@dimen/y20" />
+
+        <RadioButton
+            android:id="@+id/rb_dr_xr"
+            style="@style/fragment_child_top_title_text"
+            android:background="@null"
+            android:button="@null"
+            android:drawableBottom="@drawable/dr_title_text_bottom_line_selector"
+            android:text="@string/dr_xr"
+            android:textColor="@color/dr_title_text_color_selector" />
+
+        <View
+            style="@style/vertical_line_style"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginTop="@dimen/y20" />
+
+        <RadioButton
+            android:id="@+id/rb_dr_rm"
+            style="@style/fragment_child_top_title_text"
+            android:background="@null"
+            android:button="@null"
+            android:drawableBottom="@drawable/dr_title_text_bottom_line_selector"
+            android:text="@string/dr_rm"
+            android:textColor="@color/dr_title_text_color_selector" />
+    </RadioGroup>
+
+    <View style="@style/horizontal_line_style" />
+
+    <FrameLayout
+        android:id="@+id/fl_dr_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/rl_add_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y380"
+                android:background="@color/bg_greywhite" >
+
+                <ImageView
+                    android:id="@+id/iv_od_blur"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.3"
+                    android:background="@color/word_black" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_add_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y30" >
+
+                    <ImageView
+                        android:id="@+id/iv_od_backicon"
+                        android:layout_width="@dimen/x83"
+                        android:layout_height="@dimen/y44"
+                        android:paddingLeft="@dimen/x30"
+                        android:paddingRight="@dimen/x30"
+                        android:src="@drawable/title_back_icon" />
+                </RelativeLayout>
+
+                <com.aliamauri.meat.view.CircleImageViewWhite
+                    android:id="@+id/ci_add_icon"
+                    android:layout_width="@dimen/x180"
+                    android:layout_height="@dimen/y180"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/y60" />
+
+                <LinearLayout
+                    android:id="@+id/ll_add_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ci_add_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/y20"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_add_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/bg_white"
+                        android:textSize="@dimen/x32" />
+
+                    <TextView
+                        android:id="@+id/tv_add_agesex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:background="@drawable/selectsyle_gender"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/x10"
+                        android:paddingRight="@dimen/x10"
+                        android:textColor="@color/bg_white"
+                        android:textSize="@dimen/x32"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_add_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/y20"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_add_pland"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/bg_white"
+                        android:textSize="@dimen/x32" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/ptr_add_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/ll_add_buttom"
+                android:layout_below="@+id/rl_add_top"
+                android:background="@color/bg_white"
+                android:divider="@null" >
+            </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+            <LinearLayout
+                android:id="@+id/ll_add_buttom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_add_addattention"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/bg_white" >
+
+                    <View
+                        style="@style/horizontal_line_style"
+                        android:layout_alignParentTop="true" />
+
+                    <TextView
+                        android:id="@+id/tv_add_addattention"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableLeft="@drawable/selectstyle_doyendetail_addattention"
+                        android:drawablePadding="@dimen/x10"
+                        android:gravity="center"
+                        android:text="加关注"
+                        android:textColor="@drawable/color_greyblack_wordblack_selectstyle"
+                        android:textSize="@dimen/x32" />
+
+                    <View
+                        style="@style/vertical_partition_line_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/y20"
+                        android:layout_marginTop="@dimen/y20" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_add_addfriend"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/bg_white" >
+
+                    <View
+                        style="@style/horizontal_line_style"
+                        android:layout_alignParentTop="true" />
+
+                    <TextView
+                        android:id="@+id/tv_add_addfriend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableLeft="@drawable/selectstyle_doyendetail_addfriend"
+                        android:drawablePadding="@dimen/x10"
+                        android:gravity="center"
+                        android:text="加好友"
+                        android:textColor="@drawable/color_greyblack_wordblack_selectstyle"
+                        android:textSize="@dimen/x32" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@color/word_black"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/custom_progress"
+            android:indeterminateDuration="700" />
+    </RelativeLayout>
+
+</RelativeLayout>

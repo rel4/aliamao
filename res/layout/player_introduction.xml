@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp15" >
+
+        <LinearLayout
+            android:id="@+id/ll_playerintroduction_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_derector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="导演:--"
+                android:textColor="@color/bg_text_gray"
+                android:textScaleX="1.1"
+                android:textSize="@dimen/dp15" />
+
+            <TextView
+                android:id="@+id/tv_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp3"
+                android:gravity="center"
+                android:text="类型:--"
+                android:textColor="@color/bg_text_gray"
+                android:textScaleX="1.1"
+                android:textSize="@dimen/dp15" />
+
+            <TextView
+                android:id="@+id/tv_play_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp3"
+                android:gravity="center"
+                android:text="播放次数:--万"
+                android:textColor="@color/bg_text_gray"
+                android:textScaleX="1.1"
+                android:textSize="@dimen/dp15" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_playerintroduction_centerline"
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp10"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/v_playerintroduction_centerline"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_actor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="主演:--"
+                android:textColor="@color/bg_text_gray"
+                android:textScaleX="1.1"
+                android:textSize="@dimen/dp15" />
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp3"
+                android:gravity="center"
+                android:text="地区:--"
+                android:textColor="@color/bg_text_gray"
+                android:textScaleX="1.1"
+                android:textSize="@dimen/dp15" />
+
+            <TextView
+                android:id="@+id/tv_up_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp3"
+                android:gravity="center"
+                android:text="更新时间:--"
+                android:textColor="@color/bg_text_gray"
+                android:textScaleX="1.1"
+                android:textSize="@dimen/dp15" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp15"
+        android:scrollbars="@null" >
+
+        <TextView
+            android:id="@+id/tv_player_introduction_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/dp3"
+            android:textColor="@color/bg_text_gray"
+            android:textSize="@dimen/dp15" />
+    </ScrollView>
+
+</LinearLayout>

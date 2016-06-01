@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white" >
+
+    <RelativeLayout
+        android:id="@+id/fl_ed_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:background="@color/bg_greywhite"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:paddingTop="@dimen/y10"
+        android:paddingBottom="@dimen/y10"
+         >
+
+        <TextView
+            android:id="@+id/tv_btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x15"
+            android:text="@string/text_dialog_btn_ok"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_search_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/tv_btn_ok"
+            android:background="@drawable/bg_et_ht_search"
+            android:drawableLeft="@drawable/fdj"
+            android:drawablePadding="@dimen/x10"
+            android:ellipsize="end"
+            android:hint="@string/search_title_right_confirm"
+            android:paddingLeft="@dimen/x15"
+            android:paddingRight="@dimen/x15"
+            android:singleLine="true"
+            android:textColor="@color/word_greyblack"
+            android:textSize="@dimen/x28" />
+    </RelativeLayout>
+
+    <View
+       android:id="@+id/line"
+        style="@style/horizontal_line_style"
+        android:layout_below="@id/fl_ed_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/line"
+        android:layout_marginBottom="@dimen/y15"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/rl_tag_lists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y20"
+                android:layout_marginTop="@dimen/y20"
+                android:text="精彩推荐"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x32" />
+
+            <View
+                
+                style="@style/horizontal_line_style"
+                android:layout_marginBottom="@dimen/y15" />
+        </LinearLayout>
+    </ScrollView>
+    
+    <FrameLayout
+        android:id="@+id/fl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="@color/bg_greywhite">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/custom_progress"
+            android:indeterminateDuration="700" />
+    </FrameLayout>
+
+</RelativeLayout>

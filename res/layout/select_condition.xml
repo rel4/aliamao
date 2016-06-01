@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/title"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ll_select_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rl_selectcondition_sex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:background="@color/bg_white"
+            android:paddingLeft="@dimen/x20" >
+
+            <TextView
+                android:id="@+id/tv_selectcondition_sex1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="性别"
+                android:textColor="@drawable/tv_color_orangevsblack_style"
+                android:textSize="@dimen/x32" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_selectcondition_sex2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@drawable/tv_color_orangevsblack_style"
+                    android:textSize="@dimen/x24" >
+                </TextView>
+
+                <View
+                    style="@style/vertical_line_style"
+                    android:layout_marginLeft="@dimen/x30" >
+                </View>
+
+                <ImageView
+                    android:id="@+id/iv_selectcondition_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x30"
+                    android:paddingRight="@dimen/x20"
+                    android:src="@drawable/selectcondition_style" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_style" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/rl_condition_age"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:background="@color/bg_white"
+            android:paddingLeft="@dimen/x20" >
+
+            <TextView
+                android:id="@+id/tv_condition_age1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="年龄"
+                android:textColor="@drawable/tv_color_orangevsblack_style"
+                android:textSize="@dimen/x32" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_condition_age2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@drawable/tv_color_orangevsblack_style"
+                    android:textSize="@dimen/x24" >
+                </TextView>
+
+                <View
+                    style="@style/vertical_line_style"
+                    android:layout_marginLeft="@dimen/x30" >
+                </View>
+
+                <ImageView
+                    android:id="@+id/iv_condition_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x30"
+                    android:paddingRight="@dimen/x20"
+                    android:src="@drawable/selectcondition_style" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_style" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/rl_condition_far"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:background="@color/bg_white"
+            android:paddingLeft="@dimen/x20"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_condition_far1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="距离"
+                android:textColor="@drawable/tv_color_orangevsblack_style"
+                android:textSize="@dimen/x32" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_condition_far2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@drawable/tv_color_orangevsblack_style"
+                    android:textSize="@dimen/x24" >
+                </TextView>
+
+                <View
+                    style="@style/vertical_line_style"
+                    android:layout_marginLeft="@dimen/x30" >
+                </View>
+
+                <ImageView
+                    android:id="@+id/iv_condition_far"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x30"
+                    android:paddingRight="@dimen/x20"
+                    android:src="@drawable/selectcondition_style" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_style" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/rl_condition_city"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:background="@color/bg_white"
+            android:paddingLeft="@dimen/x20" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="省份"
+                android:textColor="@drawable/tv_color_orangevsblack_style"
+                android:textSize="@dimen/x32" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_condition_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@drawable/tv_color_orangevsblack_style"
+                    android:textSize="@dimen/x24" >
+                </TextView>
+
+                <View
+                    style="@style/vertical_line_style"
+                    android:layout_marginLeft="@dimen/x30" >
+                </View>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x30"
+                    android:paddingRight="@dimen/x20"
+                    android:src="@drawable/selectcondition_style" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_style" >
+        </View>
+
+        <TextView
+            android:id="@+id/tv_selectcondition_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y78"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/x20"
+            android:background="@drawable/bg_ht_tj"
+            android:gravity="center"
+            android:text="筛  选"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/x32" />
+
+        <View style="@style/horizontal_line_style" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_selectcondition_result"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y68"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x30"
+        android:text="筛选结果"
+        android:textColor="@color/word_black"
+        android:textSize="@dimen/x30"
+        android:visibility="gone" >
+    </TextView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.aliamauri.meat.view.RefreshListView
+            android:id="@+id/lv_selectcondition_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" >
+        </com.aliamauri.meat.view.RefreshListView>
+
+        <ProgressBar
+            android:id="@+id/pb_load_more_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/custom_progress"
+            android:indeterminateDuration="700" />
+    </FrameLayout>
+
+</LinearLayout>

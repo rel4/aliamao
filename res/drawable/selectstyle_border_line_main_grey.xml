@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/shape_border_maincolor_line" android:state_selected="true"></item>
+    <item android:drawable="@drawable/shape_border_grey_blackline" android:state_selected="false"></item>
+
+</selector>

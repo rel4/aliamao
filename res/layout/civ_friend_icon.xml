@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:myImageView="http://schemas.android.com/apk/res/com.aliamauri.meat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.aliamauri.meat.view.CircleImageView
+        android:id="@+id/civ_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         myImageView:border_width="@dimen/x1"
+        myImageView:border_color="@color/word_greyblack"
+       />
+
+</RelativeLayout>

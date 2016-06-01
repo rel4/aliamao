@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/show_del_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/y20"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/y30"
+                android:paddingTop="@dimen/y30"
+                android:text="@string/search_chile_title_ssjl" />
+
+            <TextView
+                android:id="@+id/tv_del_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/search_chile_title_qksj" />
+        </RelativeLayout>
+
+        <View
+            style="@style/horizontal_line_style"
+            android:layout_marginBottom="@dimen/y20" />
+
+        <com.aliamauri.meat.view.FlowLayout
+            android:id="@+id/fl_erach_cache"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null" >
+        </com.aliamauri.meat.view.FlowLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:layout_marginTop="@dimen/y20" />
+
+    <include layout="@layout/show_new_movies" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y30"
+        android:background="@color/bg_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/y40"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:lines="1"
+                android:text="@string/search_chile_title_yytj"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x30" />
+
+            <ImageView
+                android:id="@+id/iv_app_refrsuh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:paddingBottom="@dimen/y30"
+                android:paddingTop="@dimen/y30"
+                android:src="@drawable/sy_hyh" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gv_search_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="@dimen/y32"
+            android:numColumns="5"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/y20"
+            android:visibility="gone" >
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>

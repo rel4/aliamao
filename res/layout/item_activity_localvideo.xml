@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/x210"
+        android:layout_height="@dimen/y210"
+        android:layout_marginLeft="@dimen/y20"
+        android:layout_marginTop="@dimen/y20" >
+
+        <ImageView
+            android:id="@+id/iv_ial_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y30"
+            android:layout_alignParentBottom="true" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.7"
+                android:background="@color/word_black" />
+
+            <ImageView
+                android:layout_width="@dimen/x32"
+                android:layout_height="@dimen/y20"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:src="@drawable/icon_item_localvideo" />
+
+            <TextView
+                android:id="@+id/tv_ial_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="00:00:00"
+                android:textColor="@color/bg_white"
+                android:textSize="@dimen/x28" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

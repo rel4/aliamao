@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/ptr_fmovies_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@color/word_black"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/custom_progress" />
+    </RelativeLayout>
+
+</RelativeLayout>

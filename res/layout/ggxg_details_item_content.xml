@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_greywhite" >
+
+    <LinearLayout
+        android:id="@+id/ll_content_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y10"
+        android:orientation="vertical" >
+
+        <View
+            style="@style/horizontal_line_style"
+           />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y100"
+            android:background="@color/bg_white" >
+
+            <com.aliamauri.meat.view.CircleImageView
+                android:id="@+id/civ_hljy_hot_affiche_icon"
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/y60"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/y20"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/y20"
+                android:layout_marginTop="@dimen/y20" />
+
+            <TextView
+                android:id="@+id/tv_hljy_hot_affiche_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/civ_hljy_hot_affiche_icon"
+                android:textColor="@color/title_word_black"
+                android:textSize="@dimen/x32" />
+
+            <TextView
+                android:id="@+id/tv_hljy_hot_affiche_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/x20"
+                android:textColor="@color/time_word_black"
+                android:textSize="@dimen/x28" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_hljy_hot_affiche_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/y1"
+            android:layout_weight="1"
+            android:background="@color/bg_white"
+            android:ellipsize="end"
+            android:maxLength="50"
+            android:maxLines="3"
+            android:paddingBottom="@dimen/y20"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:paddingTop="@dimen/y20"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+       <View
+            style="@style/horizontal_line_style"
+           />
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_hobbyitem_label"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/y84"
+    android:layout_marginBottom="@dimen/y30"
+    android:layout_marginLeft="@dimen/x30"
+    android:background="@drawable/bg_hobby_item"
+    android:gravity="center"
+    android:paddingLeft="@dimen/x10"
+    android:paddingRight="@dimen/x10"
+    android:text="初始化……"
+    android:textColor="@color/word_black"
+    android:textSize="@dimen/x26" >
+
+</TextView>

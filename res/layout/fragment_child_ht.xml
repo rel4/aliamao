@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite" >
+
+    <RelativeLayout
+        android:id="@+id/rl_ht_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y110"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg_greywhite" >
+
+        <TextView
+            android:id="@+id/ib_ht_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x15"  
+            android:layout_marginRight="@dimen/x20"
+            android:textSize="@dimen/x32"
+            android:textColor="@color/word_greyblack"
+            android:text="@string/text_dialog_btn_ok"
+            />
+
+        <EditText
+            android:id="@+id/et_ht_search"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y80"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toLeftOf="@id/ib_ht_search_icon"
+            android:background="@drawable/bg_et_ht_search"
+            android:hint="@string/search_title_hint_content"
+            android:textCursorDrawable="@drawable/cursor_shape"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x40"
+            android:drawablePadding="@dimen/x7"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/fdj"
+            android:ellipsize="end"
+            android:textColor="@color/word_black"
+            android:textColorHint="@color/word_greyblack"
+            android:textSize="@dimen/x28" />
+    </RelativeLayout>
+
+    <com.aliamauri.meat.view.RefreshListView
+        android:id="@+id/lv_ht_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/rl_ht_title_layout"
+        android:background="@color/bg_white"
+        android:cacheColorHint="#00000000"
+        android:listSelector="@android:color/transparent" >
+    </com.aliamauri.meat.view.RefreshListView>
+
+</RelativeLayout>

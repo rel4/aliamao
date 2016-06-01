@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y270"
+    android:paddingBottom="@dimen/y20"
+    android:paddingTop="@dimen/y15"
+    android:paddingLeft="@dimen/x20"
+    android:background="@color/bg_white"
+    android:paddingRight="@dimen/x20"
+     >
+
+    <TextView
+        android:id="@+id/tag_title_text_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textColor="@color/title_word_black"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/x32"
+        android:text="@string/tag_title_text"
+        />
+    <TextView
+        android:id="@+id/tv_title_button_swap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textColor="@color/main_color"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/tag_title_text_qq"
+        android:textSize="@dimen/x32"
+        android:paddingLeft="@dimen/x15"
+        android:paddingRight="@dimen/x15"
+        android:text="@string/tv_btn_tag"
+        />
+        <com.aliamauri.meat.view.FlowLayout
+        android:id="@+id/fl_show_net_tag"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="@dimen/y20"
+        android:layout_below="@id/tag_title_text_qq"
+        android:background="@color/bg_white"
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="@dimen/y20">
+
+    </com.aliamauri.meat.view.FlowLayout>
+    
+    
+
+</RelativeLayout>

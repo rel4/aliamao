@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/title"
+            layout="@layout/title" />
+
+        <ListView
+            android:id="@+id/lv_details_dt_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title"
+            android:background="@color/bg_white"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:listSelector="#00000000"
+            android:paddingBottom="@dimen/y15" >
+        </ListView>
+
+        <FrameLayout
+            android:id="@+id/fl_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title"
+            android:background="@color/bg_greywhite" >
+
+            <ProgressBar
+                android:id="@+id/pb_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/custom_progress"
+                android:indeterminateDuration="700" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/bg_white"
+        android:visibility="gone" >
+
+        <View style="@style/horizontal_line_style" />
+
+        <TextView
+            android:id="@+id/tv_details_fasong"
+            style="@style/retrans_import_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y20"
+            android:text="@string/text_dialog_btn_ok" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/ll_details_import_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_toLeftOf="@id/tv_details_fasong"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_details_import_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="textMultiLine"
+                android:paddingLeft="@dimen/x10"
+                android:paddingRight="@dimen/x10"
+                android:textColor="@color/word_black"
+                android:textColorHint="@color/word_greyblack"
+                android:textSize="@dimen/x32" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/iv_details_import_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit_text_checked" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_line_style" />
+    </RelativeLayout>
+
+</FrameLayout>

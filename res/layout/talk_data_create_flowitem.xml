@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_tdcfi_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y68"
+        android:layout_marginLeft="@dimen/x15"
+        android:background="@drawable/bg_green"
+        android:gravity="center"
+        android:text="同乡"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/x26" >
+    </TextView>
+
+</LinearLayout>

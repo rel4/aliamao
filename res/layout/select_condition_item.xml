@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150"
+        android:layout_marginLeft="@dimen/x20" >
+
+        <com.aliamauri.meat.view.CircleImageView
+            android:id="@+id/ci_sci_icon"
+            android:layout_width="@dimen/x110"
+            android:layout_height="@dimen/y110"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/ci_sci_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y20" >
+
+                <Button
+                    android:id="@+id/btn_ren_add"
+                    android:layout_width="@dimen/x140"
+                    android:layout_height="@dimen/y55"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/shape_bordercircle_malecolor"
+                    android:text="加为好友"
+                    android:textColor="@color/bg_white"
+                    android:textSize="@dimen/x26" />
+
+                <TextView
+                    android:id="@+id/tv_sci_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/btn_ren_add"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/word_black"
+                    android:textSize="@dimen/x32" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/tv_sci_name"
+                    android:layout_toLeftOf="@id/btn_ren_add"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_sci_sex"
+                        android:layout_width="@dimen/x70"
+                        android:layout_height="@dimen/y32"
+                        android:background="@drawable/friend_bg_selectstyle"
+                        android:drawableLeft="@drawable/friend_sex_selectstyle"
+                        android:drawablePadding="@dimen/x4"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x10"
+                        android:textColor="@color/bg_white"
+                        android:textSize="@dimen/x22" />
+
+                    <TextView
+                        android:id="@+id/tv_sci_authenticate"
+                        android:layout_width="@dimen/x70"
+                        android:layout_height="@dimen/y32"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:background="@drawable/authenticate"
+                        android:gravity="center"
+                        android:textColor="@color/bg_white"
+                        android:textSize="@dimen/x22" />
+
+                    <TextView
+                        android:id="@+id/tv_sci_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/word_greyblack"
+                        android:textSize="@dimen/x24" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_sci_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="top|left"
+                android:singleLine="true"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x28" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+</LinearLayout>

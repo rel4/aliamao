@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30" >
+
+        <ImageView
+            android:id="@+id/iv_talkmember_checkicon"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/y30"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:src="@drawable/red_circle_check_style"
+            android:visibility="gone" />
+
+        <com.aliamauri.meat.view.CircleImageView
+            android:id="@+id/ci_talkmember_icon"
+            android:layout_width="@dimen/x98"
+            android:layout_height="@dimen/y98"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_talkmember_checkicon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_toRightOf="@+id/ci_talkmember_icon"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_tmi_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名字"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x36" />
+
+            <LinearLayout
+                android:id="@+id/ll_talkmember_gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_talkmember_far"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="距离"
+                    android:textColor="@color/word_greyblack"
+                    android:textSize="@dimen/x26" />
+
+                <TextView
+                    android:id="@+id/tv_talkmember_introduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="介绍"
+                    android:textColor="@color/word_greyblack"
+                    android:textSize="@dimen/x26" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_style" />
+
+</LinearLayout>

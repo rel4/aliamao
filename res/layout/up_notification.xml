@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="@dimen/x112"
+        android:layout_height="@dimen/y112"
+        android:layout_gravity="center"
+        android:padding="@dimen/y20"
+        android:src="@drawable/ic_launch" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/y30"
+        android:layout_marginRight="@dimen/y30"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/down_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="喵喵在线升级"
+            android:textColor="@color/word_black"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/y20" />
+    </LinearLayout>
+
+</LinearLayout>

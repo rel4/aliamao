@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_playactivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/play_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black" >
+
+            <tv.danmaku.ijk.media.sample.widget.media.IjkVideoView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center" >
+            </tv.danmaku.ijk.media.sample.widget.media.IjkVideoView>
+
+            <RelativeLayout
+                android:id="@+id/buffering_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center" >
+
+                <RelativeLayout
+                    android:id="@+id/load_ddefault_icon_layout"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_centerInParent="true" >
+
+                    <ProgressBar
+                        style="@style/MyProgressBar"
+                        android:layout_width="@dimen/dp60"
+                        android:layout_height="@dimen/dp60"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:indeterminateDrawable="@drawable/progress_small" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/pinned_buffer_icon" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/pinned_buffer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/load_ddefault_icon_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:paddingTop="@dimen/dp15"
+                    android:src="@drawable/pinned_buffer_text" />
+
+                <TextView
+                    android:id="@+id/tv_play_speed_porgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pinned_buffer_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/bg_transparent"
+                    android:text="正在缓冲 （0%）"
+                    android:textColor="@color/main_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/play_show_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@color/bg_half_transparent"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_play_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:drawableLeft="@drawable/play_back_iocn"
+                    android:enabled="true"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/bg_white" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_play_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/bg_transparent"
+                android:text="已下载文件大小 : 0.00B"
+                android:textColor="@color/bg_green"
+                android:textSize="11sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/current_volume_icon_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/urrent_volume_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/current_volume_icon" />
+
+                <TextView
+                    android:id="@+id/current_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_toRightOf="@+id/urrent_volume_text"
+                    android:background="@color/bg_transparent"
+                    android:textColor="@color/bg_white"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_down_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_transparent"
+                android:textColor="@color/main_color"
+                android:textSize="11sp" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cannot_connect_to_network" />
+
+                <com.handmark.pulltorefresh.library.PullToRefreshListView
+                    android:id="@+id/play_process_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/bg_white"
+                    android:divider="@null"
+                    android:scrollbars="none" >
+                </com.handmark.pulltorefresh.library.PullToRefreshListView>
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_input_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/y96"
+        android:layout_gravity="bottom"
+        android:background="@color/bg_greywhite"
+        android:visibility="gone" >
+
+        <View
+            style="@style/horizontal_line_style"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/btnSendComment"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@drawable/btn_shape"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:text="发送"
+            android:textSize="@dimen/x30" />
+
+        <EditText
+            android:id="@+id/etComment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_toLeftOf="@id/btnSendComment"
+            android:background="@drawable/bg_et_ht_search"
+            android:hint="输入评论"
+            android:paddingLeft="@dimen/x20"
+            android:textSize="@dimen/x30" />
+    </RelativeLayout>
+
+</FrameLayout>

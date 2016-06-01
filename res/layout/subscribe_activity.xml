@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_greywhite" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/title_bar" >
+
+        <LinearLayout
+            android:id="@+id/subscribe_main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/x28" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:background="@color/bg_white"
+                android:layout_height="wrap_content" 
+                android:paddingBottom="@dimen/y30">
+
+                <TextView
+                    android:id="@+id/tv_top_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/x98"
+                    android:drawableLeft="@drawable/my_video_icon"
+                    android:drawablePadding="@dimen/x20"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x32"
+                    android:text="我的视频"
+                    android:textColor="@color/word_black"
+                    android:textSize="@dimen/x32" />
+
+                <com.aliamauri.meat.view.DragGrid
+                    android:id="@+id/userGridView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x30"
+                    android:layout_marginLeft="@dimen/x50"
+                    android:layout_below="@id/tv_top_title"
+                    android:layout_marginRight="@dimen/x30"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/y30"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="4"
+                    android:scrollbars="vertical"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/y30" />
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line_style" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/x98"
+                android:drawableLeft="@drawable/channel_icon"
+                android:drawablePadding="@dimen/x20"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x32"
+                android:text="推荐频道"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x32" />
+
+            <com.aliamauri.meat.view.OtherGridView
+                android:id="@+id/otherGridView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginRight="@dimen/x30"
+                android:gravity="center"
+                android:horizontalSpacing="@dimen/x28"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:scrollbars="vertical"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/x28" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

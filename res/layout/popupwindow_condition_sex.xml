@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mywheelview="http://com/limaoso/InstantMessage"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/y98"
+        android:layout_above="@+id/pop_layout"
+        android:background="@color/bg_white" >
+
+        <View style="@style/horizontal_line_style" />
+
+        <TextView
+            android:id="@+id/tv_pop_condition_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="性别"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x38" />
+
+        <TextView
+            android:id="@+id/tv_pop_condition_success"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x50"
+            android:paddingRight="@dimen/x50"
+            android:text="完成"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/x38" />
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line_style"
+        android:layout_above="@+id/pop_layout" />
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bg_white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <com.aliamauri.meat.weight.wheelview.WheelView
+            android:id="@+id/wv_condition_left"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_weight="1"
+            mywheelview:ctextsize="42"
+            mywheelview:itemHeight="98"
+            mywheelview:lineHeight="55"
+            mywheelview:visibleItems="3" />
+
+        <com.aliamauri.meat.weight.wheelview.WheelView
+            android:id="@+id/wv_condition_right"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_weight="1"
+            mywheelview:ctextsize="42"
+            mywheelview:itemHeight="98"
+            mywheelview:lineHeight="55"
+            mywheelview:visibleItems="3" />
+    </LinearLayout>
+
+</RelativeLayout>

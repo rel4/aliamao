@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_border_white"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/v_lfd_view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_lfd_firststep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_marginRight="@dimen/x60"
+            android:background="@drawable/shape_border_white_line"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_lfd_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y30"
+                android:textColor="@color/word_black"
+                android:textSize="@dimen/x36"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_border_white" >
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/rl_lfd_rl1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y105"
+                android:layout_marginTop="@dimen/y30" >
+
+                <ImageView
+                    android:id="@+id/iv_lfd_phone_icon"
+                    android:layout_width="@dimen/x46"
+                    android:layout_height="@dimen/y46"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginRight="@dimen/x20"
+                    android:src="@drawable/register_phone_icon" />
+
+                <EditText
+                    android:id="@+id/et_lfd_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y96"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_lfd_phone_icon"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:gravity="center_vertical"
+                    android:hint="输入手机号码"
+                    android:inputType="number"
+                    android:textColor="@color/word_black"
+                    android:textColorHint="@color/word_greyblack"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/x36" >
+                </EditText>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_login_view1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_below="@+id/rl_lfd_rl1"
+                android:layout_centerInParent="true"
+                android:background="@color/bg_white" />
+
+            <RelativeLayout
+                android:id="@+id/rl_lfd_rl2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y105"
+                android:layout_below="@+id/view_login_view1" >
+
+                <TextView
+                    android:id="@+id/tv_lfd_getphonecode"
+                    android:layout_width="@dimen/x250"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/orange_grey_bg_select"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="@color/bg_white"
+                    android:textSize="@dimen/x28" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_lfd_phonecode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y96"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_lfd_getphonecode"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="输入验证码"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/x20"
+                    android:textColor="@color/word_black"
+                    android:textColorHint="@color/word_greyblack"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/x36" >
+
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_login_view2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_below="@+id/rl_lfd_rl2"
+                android:layout_centerInParent="true"
+                android:background="@color/bg_white" />
+
+            <LinearLayout
+                android:id="@+id/ll_lfd_gender"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y125"
+                android:layout_below="@+id/view_login_view2"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <LinearLayout
+                    android:id="@+id/rl_lfd_male"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/x80"
+                        android:layout_height="@dimen/y80"
+                        android:src="@drawable/icon_register_male" />
+
+                    <TextView
+                        style="@style/reg_log_textview"
+                        android:layout_width="@dimen/x20"
+                        android:layout_height="@dimen/y20"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:background="@drawable/register_male_selectstyle" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rl_lfd_female"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/x80"
+                        android:layout_height="@dimen/y80"
+                        android:src="@drawable/icon_register_female" />
+
+                    <TextView
+                        style="@style/reg_log_textview"
+                        android:layout_width="@dimen/x20"
+                        android:layout_height="@dimen/y20"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:background="@drawable/register_female_selectstyle" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y50"
+                android:layout_below="@+id/ll_lfd_gender"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="*绑定后不能修改性别*"
+                android:textColor="@color/word_greyblack"
+                android:textSize="@dimen/x32" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v_lfd_view2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ll"
+        android:layout_alignTop="@+id/ll"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.7"
+            android:background="@color/word_black" />
+
+        <ProgressBar
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/custom_progress"
+            android:indeterminateDuration="700" />
+    </RelativeLayout>
+
+</RelativeLayout>

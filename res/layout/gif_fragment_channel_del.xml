@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="#000" />
+
+    <RelativeLayout
+        android:id="@+id/iv_end_left"
+        android:layout_width="@dimen/x140"
+        android:layout_height="@dimen/y140"
+        android:layout_marginLeft="@dimen/x200"
+        android:layout_marginTop="@dimen/y200" >
+
+        <com.aliamauri.meat.view.gif.GIFCircleImageViewWhite
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/bg_white" />
+
+        <TextView
+            android:id="@+id/tv_gif_channel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="喵拍"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/x32" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_gfcd_del"
+        android:layout_width="@dimen/x323"
+        android:layout_height="@dimen/y380"
+        android:layout_below="@+id/iv_end_left"
+        android:layout_toRightOf="@+id/iv_end_left"
+        android:src="@drawable/icon_gif_channel_del" />
+
+    <com.ant.liao.GifView
+        android:id="@+id/gifView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/iv_end_left"
+        android:layout_alignTop="@+id/iv_end_left"
+        android:layout_marginRight="@dimen/x50"
+        android:layout_marginTop="@dimen/y50"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_hand_left"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/y120"
+        android:layout_below="@+id/iv_end_left"
+        android:layout_marginRight="@dimen/y50"
+        android:layout_marginTop="@dimen/y50"
+        android:layout_toLeftOf="@+id/iv_end_left"
+        android:src="@drawable/icon_newhand_hand" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_gfcd_del"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y100"
+        android:text="点击可取消兴趣选项"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/x36" />
+
+</RelativeLayout>

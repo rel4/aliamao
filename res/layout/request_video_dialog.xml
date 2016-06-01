@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_greywhite" >
+
+    <ImageView
+        android:id="@+id/bg_miaomiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/mmicon" />
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x70"
+        android:layout_alignBottom="@id/bg_miaomiao"
+    	android:layout_marginBottom="@dimen/x100"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/btn_yaoqing"
+            android:layout_width="@dimen/x179"
+            android:layout_height="match_parent"
+            android:text="邀请"
+            android:gravity="center"
+            android:background="@drawable/btn_yaoqing"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/x32"
+             />
+        <TextView
+            android:id="@+id/btn_tuichu"
+            android:layout_width="@dimen/x179"
+            android:layout_height="match_parent"
+             android:text="退出"
+             android:gravity="center"
+             android:layout_marginLeft="@dimen/x30"
+             android:background="@drawable/btn_tuichu"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/x32"
+             />
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/text1"
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="邀请TA发布"
+        android:textColor="@color/time_word_black"
+        android:textSize="@dimen/x70"
+          android:layout_above="@id/btns"
+    	android:layout_marginBottom="@dimen/x35"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView 
+
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TA没有发布过视频"
+        android:textColor="@color/time_word_black"
+        android:textSize="@dimen/x40"
+          android:layout_above="@id/text1"
+    	android:layout_marginBottom="@dimen/x20"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
